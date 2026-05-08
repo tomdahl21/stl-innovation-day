@@ -1,0 +1,1616 @@
+[
+  {
+    "name": "Adriana's on the Hill",
+    "archetype": "eatery",
+    "neighborhood": "The Hill",
+    "lat": 38.6248,
+    "lng": -90.2787,
+    "pitch": "The salsiccia sandwich. Don't overthink it. Lunch only, get there before noon.",
+    "archetypeData": {
+      "cuisine": "Italian-American sandwiches",
+      "signatureDish": "Salsiccia sandwich",
+      "priceTier": "$",
+      "reservationNeeded": false
+    }
+  },
+  {
+    "name": "Gioia's Deli",
+    "archetype": "eatery",
+    "neighborhood": "The Hill",
+    "lat": 38.6232,
+    "lng": -90.2772,
+    "pitch": "Hot salami on garlic cheese bread. James Beard knew. The line moves fast, just commit.",
+    "archetypeData": {
+      "cuisine": "Italian deli",
+      "signatureDish": "Hot salami sandwich",
+      "priceTier": "$",
+      "reservationNeeded": false
+    }
+  },
+  {
+    "name": "Mai Lee",
+    "archetype": "eatery",
+    "neighborhood": "Brentwood",
+    "lat": 38.6267,
+    "lng": -90.349,
+    "pitch": "First Vietnamese restaurant in St. Louis and still one of the best. Get the bun and a Vietnamese coffee.",
+    "archetypeData": {
+      "cuisine": "Vietnamese",
+      "signatureDish": "Bun bo Hue",
+      "priceTier": "$$",
+      "reservationNeeded": false
+    }
+  },
+  {
+    "name": "Pho Grand",
+    "archetype": "eatery",
+    "neighborhood": "South Grand",
+    "lat": 38.6022,
+    "lng": -90.2459,
+    "pitch": "Old-school South Grand pho. The #15 with extra basil, sit at the counter.",
+    "archetypeData": {
+      "cuisine": "Vietnamese",
+      "signatureDish": "Pho dac biet",
+      "priceTier": "$",
+      "reservationNeeded": false
+    }
+  },
+  {
+    "name": "Grbic Restaurant",
+    "archetype": "eatery",
+    "neighborhood": "Bevo Mill",
+    "lat": 38.5805,
+    "lng": -90.2535,
+    "pitch": "Cevapi and a Sarajevsko on the patio. The Bosnian community built this neighborhood; eat like you know that.",
+    "archetypeData": {
+      "cuisine": "Bosnian",
+      "signatureDish": "Cevapi",
+      "priceTier": "$$",
+      "reservationNeeded": false
+    }
+  },
+  {
+    "name": "Balkan Treat Box",
+    "archetype": "eatery",
+    "neighborhood": "Webster Groves",
+    "lat": 38.5926,
+    "lng": -90.3573,
+    "pitch": "Wood-fired somun bread, ajvar, and a Turkish coffee. Loryn Nalic is doing something singular here.",
+    "archetypeData": {
+      "cuisine": "Balkan / Turkish",
+      "signatureDish": "Pide with sucuk",
+      "priceTier": "$$",
+      "reservationNeeded": true
+    }
+  },
+  {
+    "name": "Sugarfire Smoke House",
+    "archetype": "eatery",
+    "neighborhood": "Olivette",
+    "lat": 38.6655,
+    "lng": -90.3756,
+    "pitch": "The brisket and a daily special you didn't see coming. Don't sleep on the pies.",
+    "archetypeData": {
+      "cuisine": "Barbecue",
+      "signatureDish": "Brisket",
+      "priceTier": "$$",
+      "reservationNeeded": false
+    }
+  },
+  {
+    "name": "Pappy's Smokehouse",
+    "archetype": "eatery",
+    "neighborhood": "Midtown",
+    "lat": 38.6347,
+    "lng": -90.2342,
+    "pitch": "Memphis-style ribs. Get there before they sell out, which they will.",
+    "archetypeData": {
+      "cuisine": "Barbecue",
+      "signatureDish": "Dry-rub ribs",
+      "priceTier": "$$",
+      "reservationNeeded": false
+    }
+  },
+  {
+    "name": "Bogart's Smokehouse",
+    "archetype": "eatery",
+    "neighborhood": "Soulard",
+    "lat": 38.6075,
+    "lng": -90.2107,
+    "pitch": "Apricot-blasted ribs, torched at the pass. Watch them do it.",
+    "archetypeData": {
+      "cuisine": "Barbecue",
+      "signatureDish": "Apricot-glazed ribs",
+      "priceTier": "$$",
+      "reservationNeeded": false
+    }
+  },
+  {
+    "name": "Salt + Smoke",
+    "archetype": "eatery",
+    "neighborhood": "The Loop",
+    "lat": 38.6566,
+    "lng": -90.3055,
+    "pitch": "White cheddar cracklin' cornbread, then ribs. The whiskey list is the actual move.",
+    "archetypeData": {
+      "cuisine": "Barbecue",
+      "signatureDish": "Burnt ends",
+      "priceTier": "$$",
+      "reservationNeeded": false
+    }
+  },
+  {
+    "name": "Taqueria Durango",
+    "archetype": "eatery",
+    "neighborhood": "Cherokee Street",
+    "lat": 38.5948,
+    "lng": -90.2335,
+    "pitch": "Lengua taco, a Jarritos, the radio loud. You're not in a hurry.",
+    "archetypeData": {
+      "cuisine": "Mexican",
+      "signatureDish": "Lengua tacos",
+      "priceTier": "$",
+      "reservationNeeded": false
+    }
+  },
+  {
+    "name": "La Vallesana",
+    "archetype": "eatery",
+    "neighborhood": "Cherokee Street",
+    "lat": 38.5945,
+    "lng": -90.239,
+    "pitch": "Tacos al pastor and a horchata, then a paleta from the window for the walk back to the car.",
+    "archetypeData": {
+      "cuisine": "Mexican",
+      "signatureDish": "Tacos al pastor",
+      "priceTier": "$",
+      "reservationNeeded": false
+    }
+  },
+  {
+    "name": "Yaquis on Cherokee",
+    "archetype": "eatery",
+    "neighborhood": "Cherokee Street",
+    "lat": 38.5946,
+    "lng": -90.2356,
+    "pitch": "Pizza and a beer in a long, dark room. Late-night vibes start around 10.",
+    "archetypeData": {
+      "cuisine": "Pizza",
+      "signatureDish": "House pepperoni pie",
+      "priceTier": "$$",
+      "reservationNeeded": false
+    }
+  },
+  {
+    "name": "Olive + Oak",
+    "archetype": "eatery",
+    "neighborhood": "Webster Groves",
+    "lat": 38.5926,
+    "lng": -90.3559,
+    "pitch": "Date-night staple in Webster. The roasted chicken is the order; don't be a hero.",
+    "archetypeData": {
+      "cuisine": "New American",
+      "signatureDish": "Roasted half chicken",
+      "priceTier": "$$$",
+      "reservationNeeded": true
+    }
+  },
+  {
+    "name": "Vicia",
+    "archetype": "eatery",
+    "neighborhood": "Central West End",
+    "lat": 38.6432,
+    "lng": -90.2618,
+    "pitch": "Vegetable-forward, farm-to-table without the lecture. Sit at the chef's counter if you can.",
+    "archetypeData": {
+      "cuisine": "New American",
+      "signatureDish": "Daily vegetable tasting",
+      "priceTier": "$$$$",
+      "reservationNeeded": true
+    }
+  },
+  {
+    "name": "Bulrush",
+    "archetype": "eatery",
+    "neighborhood": "Grand Center",
+    "lat": 38.6404,
+    "lng": -90.2336,
+    "pitch": "Ozark foodways, paw paw sorbet, smoked persimmon. Rob Connoley is a forager-chef on a mission.",
+    "archetypeData": {
+      "cuisine": "Ozark / New American",
+      "signatureDish": "Tasting menu",
+      "priceTier": "$$$$",
+      "reservationNeeded": true
+    }
+  },
+  {
+    "name": "Indo",
+    "archetype": "eatery",
+    "neighborhood": "Botanical Heights",
+    "lat": 38.6151,
+    "lng": -90.2502,
+    "pitch": "Nick Bognar's omakase moves; the crispy rice tuna is a religion. Book three weeks out.",
+    "archetypeData": {
+      "cuisine": "Japanese / Thai",
+      "signatureDish": "Crispy rice with tuna",
+      "priceTier": "$$$$",
+      "reservationNeeded": true
+    }
+  },
+  {
+    "name": "Sidney Street Cafe",
+    "archetype": "eatery",
+    "neighborhood": "Benton Park",
+    "lat": 38.6052,
+    "lng": -90.2218,
+    "pitch": "The chalkboard menu, the dim light, the someone-special-anniversary energy. Old St. Louis fancy, in the best way.",
+    "archetypeData": {
+      "cuisine": "New American",
+      "signatureDish": "Beef tenderloin",
+      "priceTier": "$$$",
+      "reservationNeeded": true
+    }
+  },
+  {
+    "name": "Crown Candy Kitchen",
+    "archetype": "eatery",
+    "neighborhood": "Old North St. Louis",
+    "lat": 38.6494,
+    "lng": -90.1996,
+    "pitch": "BLT and a malt. Finish all five malts and they put your name on the wall. People do.",
+    "archetypeData": {
+      "cuisine": "Soda fountain / sandwiches",
+      "signatureDish": "BLT and chocolate malt",
+      "priceTier": "$",
+      "reservationNeeded": false
+    },
+    "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a7/Inside_Crown_Candy_Kitchen.jpg",
+    "photoSource": "Wikipedia: Crown Candy Kitchen"
+  },
+  {
+    "name": "Mama's on The Hill",
+    "archetype": "eatery",
+    "neighborhood": "The Hill",
+    "lat": 38.6232,
+    "lng": -90.2772,
+    "pitch": "Red sauce. Big portions. Bring your aunt.",
+    "archetypeData": {
+      "cuisine": "Italian-American",
+      "signatureDish": "Toasted ravioli",
+      "priceTier": "$$",
+      "reservationNeeded": false
+    }
+  },
+  {
+    "name": "Union Loafers",
+    "archetype": "eatery",
+    "neighborhood": "Botanical Heights",
+    "lat": 38.6149,
+    "lng": -90.2497,
+    "pitch": "Cafe by day, pizza by night. The country bread is the actual best loaf in town.",
+    "archetypeData": {
+      "cuisine": "Bakery / Pizza",
+      "signatureDish": "Margherita pizza",
+      "priceTier": "$$",
+      "reservationNeeded": false
+    }
+  },
+  {
+    "name": "Russell's on Macklind",
+    "archetype": "eatery",
+    "neighborhood": "Southampton",
+    "lat": 38.598,
+    "lng": -90.2772,
+    "pitch": "Brunch quiche and a cinnamon roll the size of your head. Bring patience for the wait.",
+    "archetypeData": {
+      "cuisine": "Cafe / Brunch",
+      "signatureDish": "Cinnamon roll",
+      "priceTier": "$$",
+      "reservationNeeded": false
+    }
+  },
+  {
+    "name": "Carl's Drive-In",
+    "archetype": "eatery",
+    "neighborhood": "Brentwood",
+    "lat": 38.6336,
+    "lng": -90.3478,
+    "pitch": "Tiny counter, double cheeseburger, root beer. Cash only. Don't bring a crowd.",
+    "archetypeData": {
+      "cuisine": "Diner / burgers",
+      "signatureDish": "Double cheeseburger",
+      "priceTier": "$",
+      "reservationNeeded": false
+    }
+  },
+  {
+    "name": "O+O Pizza",
+    "archetype": "eatery",
+    "neighborhood": "Webster Groves",
+    "lat": 38.5912,
+    "lng": -90.3539,
+    "pitch": "Wood-fired pies and a smart wine list. Sit at the bar, watch the oven.",
+    "archetypeData": {
+      "cuisine": "Pizza",
+      "signatureDish": "Soppressata pie",
+      "priceTier": "$$",
+      "reservationNeeded": true
+    }
+  },
+  {
+    "name": "Saigon Cafe",
+    "archetype": "eatery",
+    "neighborhood": "South Grand",
+    "lat": 38.602,
+    "lng": -90.2462,
+    "pitch": "Banh mi, iced coffee, the patio in summer. Cheap and consistent for fifteen years running.",
+    "archetypeData": {
+      "cuisine": "Vietnamese",
+      "signatureDish": "Banh mi",
+      "priceTier": "$",
+      "reservationNeeded": false
+    }
+  },
+  {
+    "name": "DiGregorio's Italian Market",
+    "archetype": "eatery",
+    "neighborhood": "The Hill",
+    "lat": 38.624,
+    "lng": -90.2774,
+    "pitch": "Sub sandwich at the counter, then groceries to take home. House-made sausage in the case.",
+    "archetypeData": {
+      "cuisine": "Italian market",
+      "signatureDish": "Italian combo sub",
+      "priceTier": "$",
+      "reservationNeeded": false
+    }
+  },
+  {
+    "name": "Mission Taco Joint",
+    "archetype": "eatery",
+    "neighborhood": "The Loop",
+    "lat": 38.6566,
+    "lng": -90.305,
+    "pitch": "Crispy fish taco, frozen margarita, late-night patio. The chips and queso aren't optional.",
+    "archetypeData": {
+      "cuisine": "Tacos",
+      "signatureDish": "Baja crispy fish taco",
+      "priceTier": "$$",
+      "reservationNeeded": false
+    }
+  },
+  {
+    "name": "BAIDA Moroccan Restaurant",
+    "archetype": "eatery",
+    "neighborhood": "The Grove",
+    "lat": 38.6298,
+    "lng": -90.2545,
+    "pitch": "Lamb tagine, a small dining room, Najwa knows your face by visit two.",
+    "archetypeData": {
+      "cuisine": "Moroccan",
+      "signatureDish": "Lamb tagine",
+      "priceTier": "$$$",
+      "reservationNeeded": true
+    }
+  },
+  {
+    "name": "Nudo House",
+    "archetype": "eatery",
+    "neighborhood": "Creve Coeur",
+    "lat": 38.6675,
+    "lng": -90.4279,
+    "pitch": "Ramen and pho under one roof. The tonkotsu is the call. The Bognar family does no wrong.",
+    "archetypeData": {
+      "cuisine": "Ramen / Vietnamese",
+      "signatureDish": "Tonkotsu ramen",
+      "priceTier": "$$",
+      "reservationNeeded": false
+    }
+  },
+  {
+    "name": "Layla",
+    "archetype": "eatery",
+    "neighborhood": "The Loop",
+    "lat": 38.6565,
+    "lng": -90.3023,
+    "pitch": "Lebanese mezze, a long happy hour, sit on the patio in spring. Order three more things than you think.",
+    "archetypeData": {
+      "cuisine": "Lebanese",
+      "signatureDish": "Lamb kofta",
+      "priceTier": "$$",
+      "reservationNeeded": false
+    }
+  },
+  {
+    "name": "Frazer's Restaurant & Lounge",
+    "archetype": "eatery",
+    "neighborhood": "Benton Park",
+    "lat": 38.6068,
+    "lng": -90.2206,
+    "pitch": "Globally-curious menu in an old corner storefront. The bar is where regulars sit; sit there.",
+    "archetypeData": {
+      "cuisine": "New American",
+      "signatureDish": "Toasted ravioli with pesto",
+      "priceTier": "$$$",
+      "reservationNeeded": true
+    }
+  },
+  {
+    "name": "Polite Society",
+    "archetype": "eatery",
+    "neighborhood": "Lafayette Square",
+    "lat": 38.6181,
+    "lng": -90.2105,
+    "pitch": "Industrial-chic neighborhood spot. Sit at the bar, order the burger, go home happy.",
+    "archetypeData": {
+      "cuisine": "New American",
+      "signatureDish": "House burger",
+      "priceTier": "$$",
+      "reservationNeeded": false
+    }
+  },
+  {
+    "name": "Imo's Pizza (Shaw)",
+    "archetype": "eatery",
+    "neighborhood": "Shaw",
+    "lat": 38.6131,
+    "lng": -90.2497,
+    "pitch": "Provel-on-cracker-crust. You'll either get it or you won't. Lifers know the deluxe is the order.",
+    "archetypeData": {
+      "cuisine": "St. Louis-style pizza",
+      "signatureDish": "Deluxe pizza",
+      "priceTier": "$",
+      "reservationNeeded": false
+    }
+  },
+  {
+    "name": "Joanie's Pizzeria",
+    "archetype": "eatery",
+    "neighborhood": "Soulard",
+    "lat": 38.6109,
+    "lng": -90.2103,
+    "pitch": "Round pies and toasted ravioli on the patio. Soulard Mardi Gras crowd HQ but very good year-round.",
+    "archetypeData": {
+      "cuisine": "Pizza",
+      "signatureDish": "Toasted ravioli",
+      "priceTier": "$$",
+      "reservationNeeded": false
+    }
+  },
+  {
+    "name": "Wave Taco",
+    "archetype": "eatery",
+    "neighborhood": "Webster Groves",
+    "lat": 38.5905,
+    "lng": -90.3537,
+    "pitch": "Surf-shack tacos and a frozen margarita. Patio fills fast on Wednesdays.",
+    "archetypeData": {
+      "cuisine": "Tacos",
+      "signatureDish": "Mahi taco",
+      "priceTier": "$$",
+      "reservationNeeded": false
+    }
+  },
+  {
+    "name": "The Royale",
+    "archetype": "drink",
+    "neighborhood": "Tower Grove South",
+    "lat": 38.5996,
+    "lng": -90.2526,
+    "pitch": "Patio, dirty martini, no phones. Steve Smith's living room and yours now too.",
+    "archetypeData": {
+      "specialty": "Classic cocktails",
+      "vibe": "neighborhood",
+      "timeOfDay": "evening"
+    }
+  },
+  {
+    "name": "Planter's House",
+    "archetype": "drink",
+    "neighborhood": "Lafayette Square",
+    "lat": 38.6189,
+    "lng": -90.2102,
+    "pitch": "The cocktail program is a serious one. Sit upstairs, order something brown.",
+    "archetypeData": {
+      "specialty": "Craft cocktails",
+      "vibe": "date night",
+      "timeOfDay": "evening"
+    }
+  },
+  {
+    "name": "Small Change",
+    "archetype": "drink",
+    "neighborhood": "Tower Grove East",
+    "lat": 38.6064,
+    "lng": -90.2433,
+    "pitch": "Tiny room, big drinks, very good people behind the bar. Order off-menu, they like that.",
+    "archetypeData": {
+      "specialty": "Craft cocktails",
+      "vibe": "neighborhood",
+      "timeOfDay": "evening"
+    }
+  },
+  {
+    "name": "Sasha's Wine Bar",
+    "archetype": "drink",
+    "neighborhood": "DeMun",
+    "lat": 38.6395,
+    "lng": -90.2952,
+    "pitch": "Glass of red and a cheese plate on the patio. DeMun in the summer is a whole mood.",
+    "archetypeData": {
+      "specialty": "Wine",
+      "vibe": "neighborhood",
+      "timeOfDay": "evening"
+    }
+  },
+  {
+    "name": "Yellowbelly",
+    "archetype": "drink",
+    "neighborhood": "Central West End",
+    "lat": 38.6438,
+    "lng": -90.2622,
+    "pitch": "Tiki done right with a coastal lean. The Painkiller. The patio in July.",
+    "archetypeData": {
+      "specialty": "Tiki",
+      "vibe": "rowdy",
+      "timeOfDay": "late-night"
+    }
+  },
+  {
+    "name": "Tick Tock Tavern",
+    "archetype": "drink",
+    "neighborhood": "Tower Grove East",
+    "lat": 38.6053,
+    "lng": -90.2418,
+    "pitch": "Dollar PBR, dark booth, jukebox you'll fight over. Standard issue great dive.",
+    "archetypeData": {
+      "specialty": "Dive",
+      "vibe": "neighborhood",
+      "timeOfDay": "late-night"
+    }
+  },
+  {
+    "name": "Venice Cafe",
+    "archetype": "drink",
+    "neighborhood": "Benton Park",
+    "lat": 38.6097,
+    "lng": -90.2189,
+    "pitch": "Mosaic everything. Outdoor sculpture garden. You'll forget what year it is.",
+    "archetypeData": {
+      "specialty": "Beer / cocktails",
+      "vibe": "weird",
+      "timeOfDay": "evening"
+    }
+  },
+  {
+    "name": "Sanctuaria",
+    "archetype": "drink",
+    "neighborhood": "The Grove",
+    "lat": 38.6298,
+    "lng": -90.2553,
+    "pitch": "300+ tequilas and a Day-of-the-Dead aesthetic. Order the Old Fashioned with mezcal.",
+    "archetypeData": {
+      "specialty": "Mezcal / tequila",
+      "vibe": "date night",
+      "timeOfDay": "evening"
+    }
+  },
+  {
+    "name": "Bar Les Freres",
+    "archetype": "drink",
+    "neighborhood": "Clayton",
+    "lat": 38.6489,
+    "lng": -90.3492,
+    "pitch": "French bistro bar that thinks it's in Lyon. The Negroni and a cigarette on the patio energy.",
+    "archetypeData": {
+      "specialty": "Classic cocktails",
+      "vibe": "date night",
+      "timeOfDay": "evening"
+    }
+  },
+  {
+    "name": "Sump Coffee",
+    "archetype": "drink",
+    "neighborhood": "Gravois Park",
+    "lat": 38.5921,
+    "lng": -90.2275,
+    "pitch": "Slow bar, no laptops, single-origin pourover. Talk to whoever's behind the counter.",
+    "archetypeData": {
+      "specialty": "Specialty coffee",
+      "vibe": "neighborhood",
+      "timeOfDay": "morning"
+    }
+  },
+  {
+    "name": "Blueprint Coffee",
+    "archetype": "drink",
+    "neighborhood": "Watson",
+    "lat": 38.6056,
+    "lng": -90.2932,
+    "pitch": "Best espresso in the city, hands down. The cortado and a seat by the window.",
+    "archetypeData": {
+      "specialty": "Specialty coffee",
+      "vibe": "neighborhood",
+      "timeOfDay": "morning"
+    }
+  },
+  {
+    "name": "Civil Life Brewing Co.",
+    "archetype": "drink",
+    "neighborhood": "Tower Grove South",
+    "lat": 38.5949,
+    "lng": -90.2511,
+    "pitch": "British-style session beers, a pub room, no TVs. Order the brown ale and a darts match.",
+    "archetypeData": {
+      "specialty": "Brewery (English session beers)",
+      "vibe": "neighborhood",
+      "timeOfDay": "afternoon"
+    }
+  },
+  {
+    "name": "Side Project Cellar",
+    "archetype": "drink",
+    "neighborhood": "Maplewood",
+    "lat": 38.6125,
+    "lng": -90.3242,
+    "pitch": "Saisons and barrel-aged stouts that beer nerds drive across states for. Small pours, big flavor.",
+    "archetypeData": {
+      "specialty": "Craft brewery / cellar",
+      "vibe": "date night",
+      "timeOfDay": "evening"
+    }
+  },
+  {
+    "name": "Earthbound Beer",
+    "archetype": "drink",
+    "neighborhood": "Cherokee Street",
+    "lat": 38.5947,
+    "lng": -90.236,
+    "pitch": "Cave-aged beer in a literal limestone cave under the bar. They'll let you peek.",
+    "archetypeData": {
+      "specialty": "Brewery (cave-aged)",
+      "vibe": "weird",
+      "timeOfDay": "evening"
+    }
+  },
+  {
+    "name": "Tom's Bar & Grill",
+    "archetype": "drink",
+    "neighborhood": "Clayton",
+    "lat": 38.6463,
+    "lng": -90.3464,
+    "pitch": "Old-school Clayton dive next to the courthouse. Lawyers, judges, a $4 beer.",
+    "archetypeData": {
+      "specialty": "Dive",
+      "vibe": "neighborhood",
+      "timeOfDay": "afternoon"
+    }
+  },
+  {
+    "name": "Heavy Anchor",
+    "archetype": "drink",
+    "neighborhood": "Bevo",
+    "lat": 38.581,
+    "lng": -90.2553,
+    "pitch": "Punk dive with a back-room stage. $3 PBR, a cat sometimes, weird flyers.",
+    "archetypeData": {
+      "specialty": "Dive / DIY",
+      "vibe": "rowdy",
+      "timeOfDay": "late-night"
+    }
+  },
+  {
+    "name": "Mangia Italiano",
+    "archetype": "drink",
+    "neighborhood": "Tower Grove South",
+    "lat": 38.6011,
+    "lng": -90.2502,
+    "pitch": "Late-night pasta and a long bar full of regulars. The kitchen stays open later than your willpower.",
+    "archetypeData": {
+      "specialty": "Wine / late-night pasta",
+      "vibe": "rowdy",
+      "timeOfDay": "late-night"
+    }
+  },
+  {
+    "name": "Gamlin Whiskey House",
+    "archetype": "drink",
+    "neighborhood": "Central West End",
+    "lat": 38.644,
+    "lng": -90.2615,
+    "pitch": "300+ whiskeys, a knowledgeable bartender, a smart pour. Ask for something off-menu.",
+    "archetypeData": {
+      "specialty": "Whiskey",
+      "vibe": "date night",
+      "timeOfDay": "evening"
+    }
+  },
+  {
+    "name": "Iron Barley",
+    "archetype": "drink",
+    "neighborhood": "Holly Hills",
+    "lat": 38.5763,
+    "lng": -90.2487,
+    "pitch": "Roadhouse south-side dive with surprise live music and a smoker out back.",
+    "archetypeData": {
+      "specialty": "Dive / live music",
+      "vibe": "neighborhood",
+      "timeOfDay": "evening"
+    }
+  },
+  {
+    "name": "Reeds American Table",
+    "archetype": "drink",
+    "neighborhood": "Maplewood",
+    "lat": 38.6116,
+    "lng": -90.3234,
+    "pitch": "Walk in, sit at the bar, order whatever the bartender suggests. Rarely wrong.",
+    "archetypeData": {
+      "specialty": "Wine and seasonal cocktails",
+      "vibe": "date night",
+      "timeOfDay": "evening"
+    }
+  },
+  {
+    "name": "Fitz's Root Beer",
+    "archetype": "drink",
+    "neighborhood": "The Loop",
+    "lat": 38.6566,
+    "lng": -90.3047,
+    "pitch": "Watch them bottle root beer in the dining room. Float, fries, kid heaven. Yours too, secretly.",
+    "archetypeData": {
+      "specialty": "Root beer / sodas",
+      "vibe": "family",
+      "timeOfDay": "afternoon"
+    }
+  },
+  {
+    "name": "Schlafly Tap Room",
+    "archetype": "drink",
+    "neighborhood": "Downtown West",
+    "lat": 38.6359,
+    "lng": -90.2056,
+    "pitch": "St. Louis's first craft brewery, in a beautiful old print-shop building. Order the pale ale, that's it.",
+    "archetypeData": {
+      "specialty": "Brewery",
+      "vibe": "neighborhood",
+      "timeOfDay": "afternoon"
+    }
+  },
+  {
+    "name": "Urban Chestnut Grove Brewery & Bierhall",
+    "archetype": "drink",
+    "neighborhood": "The Grove",
+    "lat": 38.6299,
+    "lng": -90.2557,
+    "pitch": "German bierhall, communal tables, a Stammtisch you'll be invited to by visit three.",
+    "archetypeData": {
+      "specialty": "Brewery (German lagers)",
+      "vibe": "neighborhood",
+      "timeOfDay": "evening"
+    }
+  },
+  {
+    "name": "Three Kings Public House",
+    "archetype": "drink",
+    "neighborhood": "The Loop",
+    "lat": 38.6565,
+    "lng": -90.3009,
+    "pitch": "Solid burger, 80 beers, easy patio. The neighborhood pub move when you can't decide.",
+    "archetypeData": {
+      "specialty": "Beer",
+      "vibe": "neighborhood",
+      "timeOfDay": "evening"
+    }
+  },
+  {
+    "name": "Off Broadway",
+    "archetype": "venue",
+    "neighborhood": "Lemp / Marine Villa",
+    "lat": 38.6028,
+    "lng": -90.2129,
+    "pitch": "Wood floors, low stage, the band's right there. Best small venue in the city.",
+    "archetypeData": {
+      "format": "live music",
+      "capacityFeel": "intimate",
+      "seatedOrStanding": "mixed"
+    }
+  },
+  {
+    "name": "Old Rock House",
+    "archetype": "venue",
+    "neighborhood": "Soulard",
+    "lat": 38.6184,
+    "lng": -90.1894,
+    "pitch": "Brick walls, balcony seats, soul-and-roots bookings. Get the balcony if you can.",
+    "archetypeData": {
+      "format": "live music",
+      "capacityFeel": "mid",
+      "seatedOrStanding": "mixed"
+    }
+  },
+  {
+    "name": "The Pageant",
+    "archetype": "venue",
+    "neighborhood": "The Loop",
+    "lat": 38.6566,
+    "lng": -90.3071,
+    "pitch": "Bigger room with a real soundboard. Touring acts hit it; sightlines are weirdly great everywhere.",
+    "archetypeData": {
+      "format": "live music",
+      "capacityFeel": "big",
+      "seatedOrStanding": "standing"
+    },
+    "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3e/The_Pageant%2C_November_2011_%28cropped%29.jpg",
+    "photoSource": "Wikipedia: The Pageant"
+  },
+  {
+    "name": "Delmar Hall",
+    "archetype": "venue",
+    "neighborhood": "The Loop",
+    "lat": 38.6566,
+    "lng": -90.3068,
+    "pitch": "The Pageant's smaller sibling next door. Better booking lately. Arrive early for the front rail.",
+    "archetypeData": {
+      "format": "live music",
+      "capacityFeel": "mid",
+      "seatedOrStanding": "standing"
+    }
+  },
+  {
+    "name": "Blueberry Hill Duck Room",
+    "archetype": "venue",
+    "neighborhood": "The Loop",
+    "lat": 38.6573,
+    "lng": -90.3055,
+    "pitch": "Chuck Berry played here once a month for decades. Stand on hallowed sticky floor.",
+    "archetypeData": {
+      "format": "live music",
+      "capacityFeel": "intimate",
+      "seatedOrStanding": "standing"
+    },
+    "photoUrl": "https://upload.wikimedia.org/wikipedia/en/3/35/Blueberry_Hill_with_SaintLouis.png",
+    "photoSource": "Wikipedia: Blueberry Hill (restaurant)"
+  },
+  {
+    "name": "The Sheldon Concert Hall",
+    "archetype": "venue",
+    "neighborhood": "Grand Center",
+    "lat": 38.6394,
+    "lng": -90.2334,
+    "pitch": "Acoustically perfect 1912 hall. Folk and jazz, no microphone needed. Sit anywhere.",
+    "archetypeData": {
+      "format": "live music",
+      "capacityFeel": "intimate",
+      "seatedOrStanding": "seated"
+    },
+    "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Sheldonconcerthall.jpg",
+    "photoSource": "Wikipedia: The Sheldon"
+  },
+  {
+    "name": "The Improv Shop",
+    "archetype": "venue",
+    "neighborhood": "Grand Center",
+    "lat": 38.6398,
+    "lng": -90.235,
+    "pitch": "Long-form improv on a Friday at 10. Cheap, weird, occasionally transcendent.",
+    "archetypeData": {
+      "format": "comedy / improv",
+      "capacityFeel": "intimate",
+      "seatedOrStanding": "seated"
+    }
+  },
+  {
+    "name": "The Heavy Anchor (back room)",
+    "archetype": "venue",
+    "neighborhood": "Bevo",
+    "lat": 38.5811,
+    "lng": -90.2553,
+    "pitch": "DIY shows, locals on the bill, $7 cover. Walk through the bar and turn left.",
+    "archetypeData": {
+      "format": "DIY / live music",
+      "capacityFeel": "intimate",
+      "seatedOrStanding": "standing"
+    }
+  },
+  {
+    "name": "The Stage at KDHX",
+    "archetype": "venue",
+    "neighborhood": "Grand Center",
+    "lat": 38.6396,
+    "lng": -90.233,
+    "pitch": "Community radio's listening room. They record it. You'll be polite.",
+    "archetypeData": {
+      "format": "live music / radio",
+      "capacityFeel": "intimate",
+      "seatedOrStanding": "seated"
+    }
+  },
+  {
+    "name": "The Ready Room",
+    "archetype": "venue",
+    "neighborhood": "The Grove",
+    "lat": 38.6299,
+    "lng": -90.2548,
+    "pitch": "Mid-size rock club with a bar in back. Sweat-on-the-walls energy when it's full.",
+    "archetypeData": {
+      "format": "live music",
+      "capacityFeel": "mid",
+      "seatedOrStanding": "standing"
+    }
+  },
+  {
+    "name": "Bellefontaine Cemetery",
+    "archetype": "curio",
+    "neighborhood": "North Riverfront",
+    "lat": 38.68,
+    "lng": -90.2178,
+    "pitch": "314 acres, a who's-who of St. Louis history, and oaks older than the Civil War. Bring a map.",
+    "archetypeData": {
+      "storyHook": "Garden cemetery housing William Clark, Adolphus Busch, and Tennessee Williams.",
+      "timeNeeded": "2 hrs",
+      "tickets": "free"
+    },
+    "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/2/20/Wainwright_Tomb_2013.jpg",
+    "photoSource": "Wikipedia: Bellefontaine Cemetery"
+  },
+  {
+    "name": "Frank Lloyd Wright's Ebsworth Park (Kraus House)",
+    "archetype": "curio",
+    "neighborhood": "Kirkwood",
+    "lat": 38.5736,
+    "lng": -90.407,
+    "pitch": "It's a Usonian — Wright's 'middle-class beautiful' idea, built on a parallelogram grid. Tour it before everyone catches on.",
+    "archetypeData": {
+      "storyHook": "Only Frank Lloyd Wright house in the St. Louis area, on a parallelogram module.",
+      "timeNeeded": "1 hr",
+      "tickets": "$15"
+    }
+  },
+  {
+    "name": "Cathedral Basilica of Saint Louis",
+    "archetype": "curio",
+    "neighborhood": "Central West End",
+    "lat": 38.6385,
+    "lng": -90.2554,
+    "pitch": "The largest mosaic collection in the Western Hemisphere. Look up for an hour.",
+    "archetypeData": {
+      "storyHook": "41.5 million mosaic tiles installed over 75 years.",
+      "timeNeeded": "1 hr",
+      "tickets": "free"
+    },
+    "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/b/ba/Cathedral_Basilica_of_Saint_Louis_%28St._Louis%2C_MO%29_-_exterior%2C_quarter_view_2.jpg",
+    "photoSource": "Wikipedia: Cathedral Basilica of Saint Louis"
+  },
+  {
+    "name": "City Museum",
+    "archetype": "curio",
+    "neighborhood": "Downtown West",
+    "lat": 38.6336,
+    "lng": -90.2009,
+    "pitch": "Bob Cassilly's masterpiece of welded weirdness. Wear pants you don't love.",
+    "archetypeData": {
+      "storyHook": "Ten-story playscape built from salvaged industrial scrap.",
+      "timeNeeded": "half-day",
+      "tickets": "$22"
+    },
+    "photoUrl": "https://upload.wikimedia.org/wikipedia/en/thumb/5/59/City_Museum_logo.svg/330px-City_Museum_logo.svg.png",
+    "photoSource": "Wikipedia: City Museum (St. Louis, Missouri)"
+  },
+  {
+    "name": "Cahokia Mounds",
+    "archetype": "curio",
+    "neighborhood": "Collinsville, IL",
+    "lat": 38.6553,
+    "lng": -90.0617,
+    "pitch": "Largest pre-Columbian city north of Mexico. Climb Monks Mound, look back at the skyline.",
+    "archetypeData": {
+      "storyHook": "UNESCO site of a Mississippian city of 20,000+ that predated London.",
+      "timeNeeded": "half-day",
+      "tickets": "donation"
+    },
+    "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Monks_Mound_-_Summer_2024.jpg/3840px-Monks_Mound_-_Summer_2024.jpg",
+    "photoSource": "Wikipedia: Cahokia Mounds"
+  },
+  {
+    "name": "Lemp Mansion",
+    "archetype": "curio",
+    "neighborhood": "Benton Park",
+    "lat": 38.6066,
+    "lng": -90.2156,
+    "pitch": "Brewery dynasty, multiple suicides, allegedly haunted, you can have dinner there. Take the tour.",
+    "archetypeData": {
+      "storyHook": "Gilded Age brewing family mansion with a tragic, much-told history.",
+      "timeNeeded": "2 hrs",
+      "tickets": "$20"
+    },
+    "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c5/Lemp_Mansion_2012.jpg",
+    "photoSource": "Wikipedia: Lemp Mansion"
+  },
+  {
+    "name": "Pulitzer Arts Foundation",
+    "archetype": "curio",
+    "neighborhood": "Grand Center",
+    "lat": 38.6386,
+    "lng": -90.2331,
+    "pitch": "Tadao Ando concrete, a Richard Serra in the courtyard, free admission. Always quiet.",
+    "archetypeData": {
+      "storyHook": "Tadao Ando-designed contemporary art space with a permanent Serra installation.",
+      "timeNeeded": "1 hr",
+      "tickets": "free"
+    },
+    "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/a/ae/Pulitzerfoundation.jpg",
+    "photoSource": "Wikipedia: Pulitzer Arts Foundation"
+  },
+  {
+    "name": "Contemporary Art Museum St. Louis",
+    "archetype": "curio",
+    "neighborhood": "Grand Center",
+    "lat": 38.6401,
+    "lng": -90.2335,
+    "pitch": "Free, sharp curation, often the best-kept secret in town. Wednesday afternoons are ideal.",
+    "archetypeData": {
+      "storyHook": "Non-collecting contemporary museum with rotating exhibitions only.",
+      "timeNeeded": "1 hr",
+      "tickets": "free"
+    },
+    "photoUrl": "https://upload.wikimedia.org/wikipedia/en/3/32/Contemporary_Art_Museum_St._Louis_Logo.jpg",
+    "photoSource": "Wikipedia: Contemporary Art Museum St. Louis"
+  },
+  {
+    "name": "Laumeier Sculpture Park",
+    "archetype": "curio",
+    "neighborhood": "Sunset Hills",
+    "lat": 38.5448,
+    "lng": -90.4093,
+    "pitch": "105 acres, big sculpture, easy stroll. The Eye is the Instagram shot but the rest is the point.",
+    "archetypeData": {
+      "storyHook": "Outdoor museum and park with 60+ permanent contemporary sculptures.",
+      "timeNeeded": "2 hrs",
+      "tickets": "free"
+    },
+    "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/9/93/Laumeier_Sculpture_Park_02.jpg",
+    "photoSource": "Wikipedia: Laumeier Sculpture Park"
+  },
+  {
+    "name": "Old Cathedral (Basilica of Saint Louis, King of France)",
+    "archetype": "curio",
+    "neighborhood": "Downtown",
+    "lat": 38.6232,
+    "lng": -90.1895,
+    "pitch": "The only structure left from the original 1764 city plan. Quiet, small, anchoring.",
+    "archetypeData": {
+      "storyHook": "Oldest cathedral west of the Mississippi, sitting under the Arch.",
+      "timeNeeded": "30 min",
+      "tickets": "free"
+    },
+    "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Basilica_of_St._Louis_2025c.jpg/3840px-Basilica_of_St._Louis_2025c.jpg",
+    "photoSource": "Wikipedia: Basilica of St. Louis, King of France"
+  },
+  {
+    "name": "Compton Hill Water Tower",
+    "archetype": "curio",
+    "neighborhood": "Compton Heights",
+    "lat": 38.6111,
+    "lng": -90.2294,
+    "pitch": "Climb 198 steps for the best skyline view nobody knows about. Open one Saturday a month.",
+    "archetypeData": {
+      "storyHook": "1899 ornamental water tower, one of seven still standing in the U.S.",
+      "timeNeeded": "1 hr",
+      "tickets": "$5"
+    },
+    "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/5/54/Compton_Hill_Water_Tower.jpg",
+    "photoSource": "Wikipedia: Compton Hill Reservoir Park"
+  },
+  {
+    "name": "International Bowling Museum & Hall of Fame",
+    "archetype": "curio",
+    "neighborhood": "Downtown",
+    "lat": 38.6235,
+    "lng": -90.1932,
+    "pitch": "Roll a frame on the original lanes after the museum tour. The novelty phone room is unhinged.",
+    "archetypeData": {
+      "storyHook": "Bowling history under one roof, with vintage lanes you can play.",
+      "timeNeeded": "2 hrs",
+      "tickets": "$12"
+    },
+    "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/International_Bowling_Museum_and_Hall_of_Fame_April_2019_01.jpg/3840px-International_Bowling_Museum_and_Hall_of_Fame_April_2019_01.jpg",
+    "photoSource": "Wikipedia: International Bowling Museum and Hall of Fame"
+  },
+  {
+    "name": "World Chess Hall of Fame",
+    "archetype": "curio",
+    "neighborhood": "Central West End",
+    "lat": 38.6444,
+    "lng": -90.2624,
+    "pitch": "Three floors of chess art and a 14-foot king out front. Free, weird, smart.",
+    "archetypeData": {
+      "storyHook": "Free museum with the world's largest public chess piece outside.",
+      "timeNeeded": "1 hr",
+      "tickets": "free"
+    },
+    "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Chess_Club_and_Scholastic_Center_of_Saint_Louis.jpg",
+    "photoSource": "Wikipedia: World Chess Hall of Fame"
+  },
+  {
+    "name": "Magic House",
+    "archetype": "curio",
+    "neighborhood": "Kirkwood",
+    "lat": 38.5697,
+    "lng": -90.4129,
+    "pitch": "Static-electricity ball, three-story slide. Kids implode happily. Bring a change of clothes.",
+    "archetypeData": {
+      "storyHook": "Beloved hands-on children's museum in a converted Victorian.",
+      "timeNeeded": "half-day",
+      "tickets": "$15"
+    },
+    "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/0/00/The_Magic_House_Logo.JPG",
+    "photoSource": "Wikipedia: The Magic House, St. Louis Children's Museum"
+  },
+  {
+    "name": "Campbell House Museum",
+    "archetype": "curio",
+    "neighborhood": "Downtown",
+    "lat": 38.6328,
+    "lng": -90.2027,
+    "pitch": "1851 fur-trade-era mansion, period-correct. Sharon gave us the full tour. Worth every minute.",
+    "archetypeData": {
+      "storyHook": "Sole surviving Lucas Place mansion, with original family furnishings intact.",
+      "timeNeeded": "1 hr",
+      "tickets": "$10"
+    },
+    "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/7/7b/Campbell_House_Exterior.JPG",
+    "photoSource": "Wikipedia: Campbell House Museum"
+  },
+  {
+    "name": "Eugene Field House",
+    "archetype": "curio",
+    "neighborhood": "Downtown",
+    "lat": 38.6193,
+    "lng": -90.1928,
+    "pitch": "Antique toys, a Federal-style row house, the children's-poet 'Wynken, Blynken, and Nod' guy.",
+    "archetypeData": {
+      "storyHook": "Birthplace of the children's-poet Eugene Field, full of antique toys.",
+      "timeNeeded": "1 hr",
+      "tickets": "$8"
+    }
+  },
+  {
+    "name": "Griot Museum of Black History",
+    "archetype": "curio",
+    "neighborhood": "St. Louis Place",
+    "lat": 38.6515,
+    "lng": -90.2007,
+    "pitch": "Wax figures, hard truths, an under-funded gem doing the work. Donate twice what they ask.",
+    "archetypeData": {
+      "storyHook": "Black history museum centered on Missouri and the wider region.",
+      "timeNeeded": "1 hr",
+      "tickets": "$10"
+    }
+  },
+  {
+    "name": "Saint Louis Art Museum",
+    "archetype": "curio",
+    "neighborhood": "Forest Park",
+    "lat": 38.6394,
+    "lng": -90.2942,
+    "pitch": "Show up at noon Friday for the gallery talk. One painting, one curator, one hour.",
+    "archetypeData": {
+      "storyHook": "Cass Gilbert 1904 World's Fair palace, free admission, world-class permanent collection.",
+      "timeNeeded": "2 hrs",
+      "tickets": "free"
+    },
+    "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/StLouisArtMuseum.jpg/3840px-StLouisArtMuseum.jpg",
+    "photoSource": "Wikipedia: Saint Louis Art Museum"
+  },
+  {
+    "name": "Missouri History Museum",
+    "archetype": "curio",
+    "neighborhood": "Forest Park",
+    "lat": 38.6505,
+    "lng": -90.2845,
+    "pitch": "The Lindbergh Spirit of St. Louis replica is here. Free, smart, often empty mid-week.",
+    "archetypeData": {
+      "storyHook": "Free museum with deep World's Fair, civil-rights, and city-history collections.",
+      "timeNeeded": "2 hrs",
+      "tickets": "free"
+    },
+    "photoUrl": "https://upload.wikimedia.org/wikipedia/en/3/3f/Missouri_History_Museum_Logo.png",
+    "photoSource": "Wikipedia: Missouri History Museum"
+  },
+  {
+    "name": "Mildred Lane Kemper Art Museum",
+    "archetype": "curio",
+    "neighborhood": "WashU / DeMun",
+    "lat": 38.6457,
+    "lng": -90.306,
+    "pitch": "Tucked into the WashU campus, the Picassos no one talks about. Free.",
+    "archetypeData": {
+      "storyHook": "WashU's free university art museum with significant 20th-century European holdings.",
+      "timeNeeded": "1 hr",
+      "tickets": "free"
+    },
+    "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a1/Kemper_Art_Museum_at_Wash_U.jpg",
+    "photoSource": "Wikipedia: Mildred Lane Kemper Art Museum"
+  },
+  {
+    "name": "Soulard Farmers Market",
+    "archetype": "curio",
+    "neighborhood": "Soulard",
+    "lat": 38.6109,
+    "lng": -90.2107,
+    "pitch": "Oldest farmers market west of the Mississippi. Saturday at 8 AM. Bring cash, leave with eggs and a chicken.",
+    "archetypeData": {
+      "storyHook": "Farmers market continuously operating since 1779.",
+      "timeNeeded": "1 hr",
+      "tickets": "free"
+    },
+    "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Busy_Saturday_Morning_%40_Soulard_Market_%286024141476%29.jpg/3840px-Busy_Saturday_Morning_%40_Soulard_Market_%286024141476%29.jpg",
+    "photoSource": "Wikipedia: Soulard Farmers Market"
+  },
+  {
+    "name": "Climatron at Missouri Botanical Garden",
+    "archetype": "curio",
+    "neighborhood": "Shaw",
+    "lat": 38.6128,
+    "lng": -90.2589,
+    "pitch": "Geodesic dome rainforest in the middle of South City. February visit hits different.",
+    "archetypeData": {
+      "storyHook": "1960 geodesic-dome conservatory, the first of its kind for a botanical garden.",
+      "timeNeeded": "1 hr",
+      "tickets": "$16"
+    },
+    "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Climatron%2C_Missouri_Botanical_Gardens.jpg",
+    "photoSource": "Wikipedia: Climatron"
+  },
+  {
+    "name": "Jefferson Barracks Park",
+    "archetype": "outdoors",
+    "neighborhood": "Lemay",
+    "lat": 38.5036,
+    "lng": -90.2814,
+    "pitch": "Bluffs over the Mississippi, an old powder magazine, and the quietest cemetery you'll walk. Late afternoon, Wednesday. Saw two owls.",
+    "archetypeData": {
+      "activity": "river view / walking",
+      "distanceOrTrail": "Several connected trails, 3+ mi available",
+      "season": "year-round",
+      "accessibility": "stroller-friendly on main paths"
+    }
+  },
+  {
+    "name": "Castlewood State Park",
+    "archetype": "outdoors",
+    "neighborhood": "Ballwin",
+    "lat": 38.5419,
+    "lng": -90.535,
+    "pitch": "Bluff View loop overlooks the Meramec. Go in October. Bring water.",
+    "archetypeData": {
+      "activity": "hiking / trail running",
+      "distanceOrTrail": "Bluff View Loop, 3.2 mi",
+      "season": "spring/fall best",
+      "accessibility": "rugged"
+    },
+    "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Castlewoodscenic.JPG",
+    "photoSource": "Wikipedia: Castlewood State Park"
+  },
+  {
+    "name": "Shaw Nature Reserve",
+    "archetype": "outdoors",
+    "neighborhood": "Gray Summit",
+    "lat": 38.4779,
+    "lng": -90.8222,
+    "pitch": "Prairie restoration, a wetland boardwalk, old-growth oaks. Off-season is the actual best season.",
+    "archetypeData": {
+      "activity": "birding / hiking",
+      "distanceOrTrail": "14+ mi of trails",
+      "season": "year-round",
+      "accessibility": "mixed"
+    },
+    "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Shaw_Nature_Reserve_magnolias_and_daffodils_1.jpg",
+    "photoSource": "Wikipedia: Shaw Nature Reserve"
+  },
+  {
+    "name": "Missouri Botanical Garden",
+    "archetype": "outdoors",
+    "neighborhood": "Shaw",
+    "lat": 38.6125,
+    "lng": -90.2592,
+    "pitch": "Climatron at any hour, the Japanese Garden in autumn, the Linnean House in February. Annual pass pays for itself in a month.",
+    "archetypeData": {
+      "activity": "garden walking",
+      "distanceOrTrail": "79 acres",
+      "season": "year-round",
+      "accessibility": "stroller-friendly"
+    }
+  },
+  {
+    "name": "Tower Grove Park",
+    "archetype": "outdoors",
+    "neighborhood": "Tower Grove South",
+    "lat": 38.6076,
+    "lng": -90.2522,
+    "pitch": "Henry Shaw's Victorian walking park. The pavilions, the cypress, a pickup soccer game any Saturday.",
+    "archetypeData": {
+      "activity": "walking / picnic",
+      "distanceOrTrail": "289 acres, 2.5 mi loop",
+      "season": "year-round",
+      "accessibility": "stroller-friendly"
+    },
+    "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Tower_Grove_Park_Scene_1.jpg",
+    "photoSource": "Wikipedia: Tower Grove Park"
+  },
+  {
+    "name": "Powder Valley Conservation Nature Center",
+    "archetype": "outdoors",
+    "neighborhood": "Kirkwood",
+    "lat": 38.5639,
+    "lng": -90.4063,
+    "pitch": "Three short hikes through old hardwoods, ten minutes from anywhere. Owls if you're lucky.",
+    "archetypeData": {
+      "activity": "birding / hiking",
+      "distanceOrTrail": "3 mi total across 3 trails",
+      "season": "year-round",
+      "accessibility": "mixed"
+    }
+  },
+  {
+    "name": "Cliff Cave County Park",
+    "archetype": "outdoors",
+    "neighborhood": "Oakville",
+    "lat": 38.4715,
+    "lng": -90.2746,
+    "pitch": "Mississippi bluff cave (closed for bats but the view stays). The river loop is criminally empty.",
+    "archetypeData": {
+      "activity": "hiking / river view",
+      "distanceOrTrail": "3.5 mi loop",
+      "season": "year-round",
+      "accessibility": "rugged"
+    }
+  },
+  {
+    "name": "Klondike Park",
+    "archetype": "outdoors",
+    "neighborhood": "Augusta, MO",
+    "lat": 38.6135,
+    "lng": -90.8779,
+    "pitch": "Old quarry, Katy Trail access, lake at the bottom. Camp here in October when the wineries are full.",
+    "archetypeData": {
+      "activity": "camping / cycling",
+      "distanceOrTrail": "Katy Trail spur + 3 mi park trails",
+      "season": "spring/fall best",
+      "accessibility": "mixed"
+    }
+  },
+  {
+    "name": "Katy Trail (Defiance to Augusta)",
+    "archetype": "outdoors",
+    "neighborhood": "St. Charles County",
+    "lat": 38.647,
+    "lng": -90.7837,
+    "pitch": "Flat, shaded, river-adjacent. Pack a sandwich and a swim. Not a hill anywhere.",
+    "archetypeData": {
+      "activity": "cycling",
+      "distanceOrTrail": "Defiance to Augusta, 7 mi one-way",
+      "season": "spring/fall best",
+      "accessibility": "stroller-friendly"
+    }
+  },
+  {
+    "name": "Creve Coeur Lake Memorial Park",
+    "archetype": "outdoors",
+    "neighborhood": "Maryland Heights",
+    "lat": 38.7176,
+    "lng": -90.4793,
+    "pitch": "Largest natural lake in Missouri. 3.7-mile loop, paddleboards in summer, very flat.",
+    "archetypeData": {
+      "activity": "lake loop / paddling",
+      "distanceOrTrail": "3.7 mi loop",
+      "season": "year-round",
+      "accessibility": "stroller-friendly"
+    }
+  },
+  {
+    "name": "Bee Tree Park",
+    "archetype": "outdoors",
+    "neighborhood": "Oakville",
+    "lat": 38.4633,
+    "lng": -90.2812,
+    "pitch": "Bluff overlook of the Mississippi nobody is at. Bring a thermos.",
+    "archetypeData": {
+      "activity": "river view / walking",
+      "distanceOrTrail": "1.5 mi trails",
+      "season": "year-round",
+      "accessibility": "stroller-friendly"
+    }
+  },
+  {
+    "name": "Pere Marquette State Park",
+    "archetype": "outdoors",
+    "neighborhood": "Grafton, IL",
+    "lat": 38.9719,
+    "lng": -90.5462,
+    "pitch": "Drive the Great River Road. Eagle-watch in January. Get the fried chicken at the lodge.",
+    "archetypeData": {
+      "activity": "hiking / eagle viewing",
+      "distanceOrTrail": "12 mi of trails",
+      "season": "winter eagles, fall color",
+      "accessibility": "rugged"
+    },
+    "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Pere_Marquette_Park.jpg",
+    "photoSource": "Wikipedia: Pere Marquette State Park"
+  },
+  {
+    "name": "Forest Park (Kennedy Forest trails)",
+    "archetype": "outdoors",
+    "neighborhood": "Forest Park",
+    "lat": 38.6359,
+    "lng": -90.292,
+    "pitch": "Forest Park has woods. Real ones. Kennedy Forest, west end, before sunset.",
+    "archetypeData": {
+      "activity": "trail walking",
+      "distanceOrTrail": "1.4 mi forest loop",
+      "season": "year-round",
+      "accessibility": "mixed"
+    },
+    "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Forest_Park%2C_St_Louis.jpg",
+    "photoSource": "Wikipedia: Forest Park (St. Louis)"
+  },
+  {
+    "name": "Riverlands Migratory Bird Sanctuary",
+    "archetype": "outdoors",
+    "neighborhood": "West Alton",
+    "lat": 38.8678,
+    "lng": -90.1734,
+    "pitch": "American white pelicans in October. Bald eagles in January. Bring binoculars and patience.",
+    "archetypeData": {
+      "activity": "birding",
+      "distanceOrTrail": "Multiple boardwalks, 4+ mi",
+      "season": "fall/winter best",
+      "accessibility": "stroller-friendly"
+    }
+  },
+  {
+    "name": "River des Peres Greenway",
+    "archetype": "outdoors",
+    "neighborhood": "South City",
+    "lat": 38.565,
+    "lng": -90.283,
+    "pitch": "Underrated bike trail that connects everything south. Quiet on weekday mornings.",
+    "archetypeData": {
+      "activity": "cycling",
+      "distanceOrTrail": "10+ mi paved",
+      "season": "year-round",
+      "accessibility": "stroller-friendly"
+    }
+  },
+  {
+    "name": "Vintage Vinyl",
+    "archetype": "shop",
+    "neighborhood": "The Loop",
+    "lat": 38.6566,
+    "lng": -90.303,
+    "pitch": "Dig in the back. Lew has been doing this for 40 years. Cash, vinyl, conversation.",
+    "archetypeData": {
+      "specialty": "Vintage records",
+      "vibe": "deep dig, knowledgeable staff",
+      "priceTier": "$$"
+    }
+  },
+  {
+    "name": "Euclid Records",
+    "archetype": "shop",
+    "neighborhood": "Webster Groves",
+    "lat": 38.5919,
+    "lng": -90.3551,
+    "pitch": "Two floors. The jazz upstairs is the move. Friday in-stores are excellent.",
+    "archetypeData": {
+      "specialty": "Records, new and used",
+      "vibe": "browse for hours",
+      "priceTier": "$$"
+    }
+  },
+  {
+    "name": "Left Bank Books",
+    "archetype": "shop",
+    "neighborhood": "Central West End",
+    "lat": 38.6443,
+    "lng": -90.2598,
+    "pitch": "Independent, opinionated staff picks, frequent author readings. Buy something off the shelf they made.",
+    "archetypeData": {
+      "specialty": "Independent books",
+      "vibe": "literary",
+      "priceTier": "$$"
+    }
+  },
+  {
+    "name": "Subterranean Books",
+    "archetype": "shop",
+    "neighborhood": "The Loop",
+    "lat": 38.6562,
+    "lng": -90.3043,
+    "pitch": "Small, sharp, the kind of bookstore that knows what just landed and why. Ask Kelly.",
+    "archetypeData": {
+      "specialty": "Independent books",
+      "vibe": "tight curation",
+      "priceTier": "$$"
+    }
+  },
+  {
+    "name": "Dunaway Books",
+    "archetype": "shop",
+    "neighborhood": "South Grand",
+    "lat": 38.6029,
+    "lng": -90.2462,
+    "pitch": "Used books, two stories deep. Find a first edition at a price the shop somehow undersold.",
+    "archetypeData": {
+      "specialty": "Used and rare books",
+      "vibe": "labyrinthine",
+      "priceTier": "$"
+    }
+  },
+  {
+    "name": "Retro 101",
+    "archetype": "shop",
+    "neighborhood": "Cherokee Street",
+    "lat": 38.5947,
+    "lng": -90.2371,
+    "pitch": "Mid-century furniture and decor with prices that haven't caught up to Brooklyn yet.",
+    "archetypeData": {
+      "specialty": "Mid-century vintage",
+      "vibe": "curated thrift",
+      "priceTier": "$$"
+    }
+  },
+  {
+    "name": "STL-Style House",
+    "archetype": "shop",
+    "neighborhood": "Cherokee Street",
+    "lat": 38.5946,
+    "lng": -90.2349,
+    "pitch": "T-shirts that are inside-jokes for St. Louisans. The Bevo Mill one. The brain sandwich one.",
+    "archetypeData": {
+      "specialty": "Local apparel and design",
+      "vibe": "playful local",
+      "priceTier": "$$"
+    }
+  },
+  {
+    "name": "The Future Antiques",
+    "archetype": "shop",
+    "neighborhood": "Marine Villa",
+    "lat": 38.6014,
+    "lng": -90.2194,
+    "pitch": "Two-floor antique warehouse where dealers rent booths. A whole afternoon, easily.",
+    "archetypeData": {
+      "specialty": "Antiques and vintage",
+      "vibe": "treasure hunt",
+      "priceTier": "$$"
+    }
+  },
+  {
+    "name": "Penzeys Spices",
+    "archetype": "shop",
+    "neighborhood": "Brentwood",
+    "lat": 38.6217,
+    "lng": -90.3493,
+    "pitch": "Smell every jar. Walk out with five. The Bangkok Blend changes weeknight cooking.",
+    "archetypeData": {
+      "specialty": "Spices",
+      "vibe": "sensory",
+      "priceTier": "$$"
+    }
+  },
+  {
+    "name": "Bertarelli Cutlery",
+    "archetype": "shop",
+    "neighborhood": "The Hill",
+    "lat": 38.6238,
+    "lng": -90.278,
+    "pitch": "Italian knives, sharpening, third-generation family shop. They'll tell you what you actually need.",
+    "archetypeData": {
+      "specialty": "Knives and kitchenware",
+      "vibe": "old-school specialty",
+      "priceTier": "$$$"
+    }
+  }
+]

@@ -1,0 +1,104 @@
+@import "tailwindcss";
+
+:root {
+  --surface:      #FCFAF5;
+  --paper:        #F4EDE0;
+  --paper-warm:   #ECE2CD;
+  --paper-shade:  #E3D6BB;
+  --ink:          #1A1612;
+  --ink-soft:     #4A4239;
+  --ink-muted:    #7A6F62;
+  --brick:        #B14F2B;
+  --brick-deep:   #8A3920;
+  --moss:         #34503C;
+  --stone-line:   #C8BDA9;
+}
+
+@theme inline {
+  --color-surface: var(--surface);
+  --color-paper: var(--paper);
+  --color-paper-warm: var(--paper-warm);
+  --color-paper-shade: var(--paper-shade);
+  --color-ink: var(--ink);
+  --color-ink-soft: var(--ink-soft);
+  --color-ink-muted: var(--ink-muted);
+  --color-brick: var(--brick);
+  --color-brick-deep: var(--brick-deep);
+  --color-moss: var(--moss);
+  --color-stone-line: var(--stone-line);
+  --font-sans: var(--font-dm-sans);
+  --font-serif: var(--font-fraunces);
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-dm-sans), -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  font-feature-settings: "ss01", "cv11";
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  overflow: hidden;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  background-image:
+    radial-gradient(circle at 20% 30%, rgba(177, 79, 43, 0.025) 0%, transparent 40%),
+    radial-gradient(circle at 80% 70%, rgba(52, 80, 60, 0.02) 0%, transparent 40%);
+}
+
+.serif-display {
+  font-family: var(--font-fraunces), 'Iowan Old Style', Georgia, serif;
+  font-style: italic;
+  font-weight: 500;
+  font-variation-settings: "opsz" 144;
+  letter-spacing: -0.025em;
+  line-height: 1;
+}
+
+.serif-heading {
+  font-family: var(--font-fraunces), 'Iowan Old Style', Georgia, serif;
+  font-weight: 400;
+  font-variation-settings: "opsz" 96;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+}
+
+.eyebrow {
+  font-family: var(--font-dm-sans), system-ui, sans-serif;
+  font-size: 0.7rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--ink-muted);
+  font-weight: 500;
+}
+
+/* Leaflet attribution + controls in brand colors */
+.leaflet-container {
+  background: var(--paper-warm) !important;
+  font-family: var(--font-dm-sans), system-ui, sans-serif !important;
+}
+.leaflet-control-attribution {
+  background: rgba(244, 237, 224, 0.85) !important;
+  color: var(--ink-muted) !important;
+  font-size: 9px !important;
+  padding: 2px 6px !important;
+}
+.leaflet-control-attribution a {
+  color: var(--ink-muted) !important;
+}
+.trove-pin { background: transparent !important; border: 0 !important; }
+
+@keyframes trove-pulse {
+  0%, 100% { transform: scale(1); }
+  50%      { transform: scale(1.15); }
+}
