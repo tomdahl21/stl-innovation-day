@@ -50,6 +50,7 @@ type StoreState = {
   // ---- persisted ----
   logbook: Record<string, LogbookEntry>;
   userPlaces: Place[];
+  theme: "light" | "dark";
   lists: SharedList[];
   activeListId: string | null;
   pendingImport: SharedListPayload | null;
@@ -57,6 +58,7 @@ type StoreState = {
 };
 
 type StoreActions = {
+  toggleTheme: () => void;
   setPersona: (id: string) => void;
   toggleArchetype: (name: ArchetypeName) => void;
   setArchetypeFilter: (names: ArchetypeName[] | null) => void;
@@ -110,6 +112,10 @@ export const useAppStore = create<StoreState & StoreActions>()(
       nearbyRadius: 1,
       logbook: {},
       userPlaces: [],
+      theme: "light",
+
+      toggleTheme: () =>
+        set((s) => ({ theme: s.theme === "light" ? "dark" : "light" })),
       lists: [],
       activeListId: null,
       pendingImport: null,
@@ -337,6 +343,7 @@ export const useAppStore = create<StoreState & StoreActions>()(
       partialize: (state) => ({
         logbook: state.logbook,
         userPlaces: state.userPlaces,
+        theme: state.theme,
         lists: state.lists,
         displayName: state.displayName,
       }),
