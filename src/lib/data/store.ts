@@ -54,6 +54,7 @@ type StoreState = {
   activeListId: string | null;
   pendingImport: SharedListPayload | null;
   displayName: string;
+  hasSeenOnboarding: boolean;
 };
 
 type StoreActions = {
@@ -78,6 +79,7 @@ type StoreActions = {
   importList: (payload: SharedListPayload) => string;
   mergeIntoList: (listId: string, payload: SharedListPayload) => void;
   setDisplayName: (name: string) => void;
+  markOnboardingSeen: () => void;
   // ---- geolocation ----
   setUserLocation: (lat: number, lng: number) => void;
   setGeoStatus: (status: GeoStatus) => void;
@@ -114,6 +116,7 @@ export const useAppStore = create<StoreState & StoreActions>()(
       activeListId: null,
       pendingImport: null,
       displayName: "",
+      hasSeenOnboarding: false,
 
       setPersona: (id) => set({ activePersonaId: id }),
 
@@ -273,6 +276,8 @@ export const useAppStore = create<StoreState & StoreActions>()(
 
       setDisplayName: (name) => set({ displayName: name.trim() }),
 
+      markOnboardingSeen: () => set({ hasSeenOnboarding: true }),
+
       // ---- geolocation ----
       setUserLocation: (lat, lng) => set({ userLat: lat, userLng: lng, geoStatus: "active" }),
       setGeoStatus: (status) => set({ geoStatus: status }),
@@ -339,6 +344,7 @@ export const useAppStore = create<StoreState & StoreActions>()(
         userPlaces: state.userPlaces,
         lists: state.lists,
         displayName: state.displayName,
+        hasSeenOnboarding: state.hasSeenOnboarding,
       }),
     },
   ),

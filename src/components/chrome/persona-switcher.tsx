@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import { useAppStore } from "@/lib/data/store";
 import { personas, getPersona } from "@/lib/data/personas";
 import { cn } from "@/lib/cn";
@@ -69,6 +70,16 @@ export function PersonaSwitcher() {
                 </span>
               </button>
             ))}
+            <Link
+              href="/onboarding"
+              onClick={() => setOpen(false)}
+              className="flex items-center gap-2 px-3 py-2 text-left text-xs hover:bg-paper-warm/50"
+            >
+              <span className="flex h-7 w-7 items-center justify-center rounded-full bg-paper-warm text-[12px] text-ink-soft">
+                →
+              </span>
+              <span className="font-medium text-ink-soft">View intro</span>
+            </Link>
           </div>
         </>
       )}

@@ -10,10 +10,12 @@ import { Lists } from "@/components/overlays/lists";
 import { ListDetail } from "@/components/overlays/list-detail";
 import { ListImport } from "@/components/overlays/list-import";
 import { ListFragmentDetector } from "@/components/overlays/list-fragment-detector";
+import { OnboardingGate } from "@/components/onboarding/onboarding-gate";
 
 export default function Home() {
   return (
     <main className="relative h-full w-full overflow-hidden bg-paper">
+      <OnboardingGate />
       <MapScreen />
       <TopBar />
       <PeekCard />
