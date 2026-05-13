@@ -39,15 +39,16 @@ export function PlaceDetail() {
         className="relative h-44 shrink-0 bg-paper-warm"
         style={heroStyle(place)}
       >
+        {/* Close — min 44×44px touch target */}
         <button
           onClick={() => setOverlay(null)}
-          aria-label="Close"
-          className="absolute left-3 top-3 flex h-9 w-9 items-center justify-center rounded-full bg-paper/90 text-base text-ink hover:bg-paper"
+          aria-label="Close place detail"
+          className="absolute left-3 top-3 flex h-11 w-11 items-center justify-center rounded-full bg-paper/90 text-base text-ink hover:bg-paper"
         >
           ←
         </button>
         {entry && (
-          <div className="absolute right-3 top-3 rounded-full bg-paper/95 px-3 py-1 text-[10px] font-medium uppercase tracking-[0.1em] text-ink">
+          <div className="absolute right-3 top-3 rounded-full bg-paper/95 px-3 py-1 text-[11px] font-medium uppercase tracking-[0.1em] text-ink">
             {entry.state === "been"
               ? "Been there"
               : entry.state === "want"
@@ -59,7 +60,7 @@ export function PlaceDetail() {
 
       {/* Body */}
       <div className="flex-1 overflow-y-auto px-5 py-4">
-        <div className="eyebrow text-[10px] !text-brick">
+        <div className="eyebrow !text-brick">
           {meta.label} · {place.neighborhood}
         </div>
         <h2 className="serif-heading mt-1 text-2xl text-ink">{place.name}</h2>
@@ -68,7 +69,7 @@ export function PlaceDetail() {
           <dl className="mt-3 flex flex-wrap gap-x-4 gap-y-1 text-[11px] text-ink-muted">
             {detailRows.map((row) => (
               <div key={row.label} className="flex items-baseline gap-1">
-                <dt className="uppercase tracking-[0.1em] text-[9px]">
+                <dt className="text-[11px] uppercase tracking-[0.1em]">
                   {row.label}
                 </dt>
                 <dd className="text-ink-soft">{row.value}</dd>
@@ -83,12 +84,16 @@ export function PlaceDetail() {
 
         {contributor && (
           <div className="mt-4 flex items-center gap-2 text-[11px] text-ink-muted">
-            <div className="flex h-6 w-6 items-center justify-center rounded-full bg-moss text-[10px] font-medium text-paper">
+            <div
+              aria-hidden="true"
+              className="flex h-6 w-6 items-center justify-center rounded-full bg-moss text-[11px] font-medium text-paper"
+            >
               {contributor.initials}
             </div>
             Added by {contributor.displayName}
             {contributor.tier === "founding" && (
-              <span className="ml-1 rounded-full bg-brick px-2 py-0.5 text-[9px] font-medium uppercase tracking-[0.12em] text-paper">
+              /* bg-brick-deep instead of bg-brick — paper text on brick-deep = 6.6:1 ✓ */
+              <span className="ml-1 rounded-full bg-brick-deep px-2 py-0.5 text-[11px] font-medium uppercase tracking-[0.12em] text-paper">
                 Founding
               </span>
             )}
@@ -97,7 +102,7 @@ export function PlaceDetail() {
 
         {entry && (
           <div className="mt-5">
-            <label className="eyebrow block text-[10px]">Your note</label>
+            <label className="eyebrow block">Your note</label>
             <textarea
               defaultValue={entry.note ?? ""}
               onBlur={(e) => setLogbookNote(place.id, e.target.value)}
@@ -113,18 +118,21 @@ export function PlaceDetail() {
       <div className="flex shrink-0 gap-1.5 border-t border-stone-line bg-surface px-5 py-3">
         <ActionButton
           active={entry?.state === "want"}
+          aria-pressed={entry?.state === "want"}
           onClick={() => setState("want")}
         >
           Want to go
         </ActionButton>
         <ActionButton
           active={entry?.state === "saved"}
+          aria-pressed={entry?.state === "saved"}
           onClick={() => setState("saved")}
         >
           Saved
         </ActionButton>
         <ActionButton
           active={entry?.state === "been"}
+          aria-pressed={entry?.state === "been"}
           onClick={() => setState("been")}
           primary
         >
@@ -140,17 +148,21 @@ function ActionButton({
   active,
   primary,
   onClick,
+  "aria-pressed": ariaPressed,
 }: {
   children: React.ReactNode;
   active?: boolean;
   primary?: boolean;
   onClick: () => void;
+  "aria-pressed"?: boolean;
 }) {
   return (
     <button
       onClick={onClick}
+      aria-pressed={ariaPressed}
       className={cn(
-        "flex-1 rounded-lg border px-2 py-2.5 text-[11px] font-medium transition-colors",
+        /* min 44px height touch target */
+        "flex-1 rounded-lg border px-2 py-3 text-[11px] font-medium transition-colors",
         active && primary
           ? "border-ink bg-ink text-paper"
           : active
