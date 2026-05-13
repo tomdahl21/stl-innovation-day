@@ -346,7 +346,6 @@ export const useAppStore = create<StoreState & StoreActions>()(
         theme: state.theme,
         lists: state.lists,
         displayName: state.displayName,
-        theme: state.theme,
       }),
     },
   ),
