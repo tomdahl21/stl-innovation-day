@@ -12,7 +12,8 @@
       "signatureDish": "Salsiccia sandwich",
       "priceTier": "$",
       "reservationNeeded": false
-    }
+    },
+    "photos": []
   },
   {
     "name": "Gioia's Deli",
@@ -27,7 +28,8 @@
       "signatureDish": "Hot salami sandwich",
       "priceTier": "$",
       "reservationNeeded": false
-    }
+    },
+    "photos": []
   },
   {
     "name": "Mai Lee",
@@ -42,7 +44,8 @@
       "signatureDish": "Bun bo Hue",
       "priceTier": "$$",
       "reservationNeeded": false
-    }
+    },
+    "photos": []
   },
   {
     "name": "Pho Grand",
@@ -57,7 +60,8 @@
       "signatureDish": "Pho dac biet",
       "priceTier": "$",
       "reservationNeeded": false
-    }
+    },
+    "photos": []
   },
   {
     "name": "Grbic Restaurant",
@@ -72,7 +76,8 @@
       "signatureDish": "Cevapi",
       "priceTier": "$$",
       "reservationNeeded": false
-    }
+    },
+    "photos": []
   },
   {
     "name": "Balkan Treat Box",
@@ -87,7 +92,8 @@
       "signatureDish": "Pide with sucuk",
       "priceTier": "$$",
       "reservationNeeded": true
-    }
+    },
+    "photos": []
   },
   {
     "name": "Sugarfire Smoke House",
@@ -102,7 +108,8 @@
       "signatureDish": "Brisket",
       "priceTier": "$$",
       "reservationNeeded": false
-    }
+    },
+    "photos": []
   },
   {
     "name": "Pappy's Smokehouse",
@@ -117,7 +124,8 @@
       "signatureDish": "Dry-rub ribs",
       "priceTier": "$$",
       "reservationNeeded": false
-    }
+    },
+    "photos": []
   },
   {
     "name": "Bogart's Smokehouse",
@@ -132,7 +140,8 @@
       "signatureDish": "Apricot-glazed ribs",
       "priceTier": "$$",
       "reservationNeeded": false
-    }
+    },
+    "photos": []
   },
   {
     "name": "Salt + Smoke",
@@ -147,7 +156,8 @@
       "signatureDish": "Burnt ends",
       "priceTier": "$$",
       "reservationNeeded": false
-    }
+    },
+    "photos": []
   },
   {
     "name": "Taqueria Durango",
@@ -162,7 +172,8 @@
       "signatureDish": "Lengua tacos",
       "priceTier": "$",
       "reservationNeeded": false
-    }
+    },
+    "photos": []
   },
   {
     "name": "La Vallesana",
@@ -177,7 +188,8 @@
       "signatureDish": "Tacos al pastor",
       "priceTier": "$",
       "reservationNeeded": false
-    }
+    },
+    "photos": []
   },
   {
     "name": "Yaquis on Cherokee",
@@ -192,7 +204,8 @@
       "signatureDish": "House pepperoni pie",
       "priceTier": "$$",
       "reservationNeeded": false
-    }
+    },
+    "photos": []
   },
   {
     "name": "Olive + Oak",
@@ -207,7 +220,8 @@
       "signatureDish": "Roasted half chicken",
       "priceTier": "$$$",
       "reservationNeeded": true
-    }
+    },
+    "photos": []
   },
   {
     "name": "Vicia",
@@ -222,7 +236,8 @@
       "signatureDish": "Daily vegetable tasting",
       "priceTier": "$$$$",
       "reservationNeeded": true
-    }
+    },
+    "photos": []
   },
   {
     "name": "Bulrush",
@@ -237,7 +252,8 @@
       "signatureDish": "Tasting menu",
       "priceTier": "$$$$",
       "reservationNeeded": true
-    }
+    },
+    "photos": []
   },
   {
     "name": "Indo",
@@ -252,7 +268,8 @@
       "signatureDish": "Crispy rice with tuna",
       "priceTier": "$$$$",
       "reservationNeeded": true
-    }
+    },
+    "photos": []
   },
   {
     "name": "Sidney Street Cafe",
@@ -267,7 +284,8 @@
       "signatureDish": "Beef tenderloin",
       "priceTier": "$$$",
       "reservationNeeded": true
-    }
+    },
+    "photos": []
   },
   {
     "name": "Crown Candy Kitchen",
@@ -283,8 +301,12 @@
       "priceTier": "$",
       "reservationNeeded": false
     },
-    "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a7/Inside_Crown_Candy_Kitchen.jpg",
-    "photoSource": "Wikipedia: Crown Candy Kitchen"
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Inside_Crown_Candy_Kitchen.jpg/1920px-Inside_Crown_Candy_Kitchen.jpg",
+        "source": "Wikipedia: Crown Candy Kitchen"
+      }
+    ]
   },
   {
     "name": "Mama's on The Hill",
@@ -299,7 +321,8 @@
       "signatureDish": "Toasted ravioli",
       "priceTier": "$$",
       "reservationNeeded": false
-    }
+    },
+    "photos": []
   },
   {
     "name": "Union Loafers",
@@ -314,7 +337,8 @@
       "signatureDish": "Margherita pizza",
       "priceTier": "$$",
       "reservationNeeded": false
-    }
+    },
+    "photos": []
   },
   {
     "name": "Russell's on Macklind",
@@ -329,7 +353,8 @@
       "signatureDish": "Cinnamon roll",
       "priceTier": "$$",
       "reservationNeeded": false
-    }
+    },
+    "photos": []
   },
   {
     "name": "Carl's Drive-In",
@@ -344,7 +369,8 @@
       "signatureDish": "Double cheeseburger",
       "priceTier": "$",
       "reservationNeeded": false
-    }
+    },
+    "photos": []
   },
   {
     "name": "O+O Pizza",
@@ -359,7 +385,8 @@
       "signatureDish": "Soppressata pie",
       "priceTier": "$$",
       "reservationNeeded": true
-    }
+    },
+    "photos": []
   },
   {
     "name": "Saigon Cafe",
@@ -374,7 +401,8 @@
       "signatureDish": "Banh mi",
       "priceTier": "$",
       "reservationNeeded": false
-    }
+    },
+    "photos": []
   },
   {
     "name": "DiGregorio's Italian Market",
@@ -389,7 +417,8 @@
       "signatureDish": "Italian combo sub",
       "priceTier": "$",
       "reservationNeeded": false
-    }
+    },
+    "photos": []
   },
   {
     "name": "Mission Taco Joint",
@@ -404,7 +433,8 @@
       "signatureDish": "Baja crispy fish taco",
       "priceTier": "$$",
       "reservationNeeded": false
-    }
+    },
+    "photos": []
   },
   {
     "name": "BAIDA Moroccan Restaurant",
@@ -419,7 +449,8 @@
       "signatureDish": "Lamb tagine",
       "priceTier": "$$$",
       "reservationNeeded": true
-    }
+    },
+    "photos": []
   },
   {
     "name": "Nudo House",
@@ -434,7 +465,8 @@
       "signatureDish": "Tonkotsu ramen",
       "priceTier": "$$",
       "reservationNeeded": false
-    }
+    },
+    "photos": []
   },
   {
     "name": "Layla",
@@ -449,7 +481,8 @@
       "signatureDish": "Lamb kofta",
       "priceTier": "$$",
       "reservationNeeded": false
-    }
+    },
+    "photos": []
   },
   {
     "name": "Frazer's Restaurant & Lounge",
@@ -464,7 +497,8 @@
       "signatureDish": "Toasted ravioli with pesto",
       "priceTier": "$$$",
       "reservationNeeded": true
-    }
+    },
+    "photos": []
   },
   {
     "name": "Polite Society",
@@ -479,7 +513,8 @@
       "signatureDish": "House burger",
       "priceTier": "$$",
       "reservationNeeded": false
-    }
+    },
+    "photos": []
   },
   {
     "name": "Imo's Pizza (Shaw)",
@@ -494,7 +529,8 @@
       "signatureDish": "Deluxe pizza",
       "priceTier": "$",
       "reservationNeeded": false
-    }
+    },
+    "photos": []
   },
   {
     "name": "Joanie's Pizzeria",
@@ -509,7 +545,8 @@
       "signatureDish": "Toasted ravioli",
       "priceTier": "$$",
       "reservationNeeded": false
-    }
+    },
+    "photos": []
   },
   {
     "name": "Wave Taco",
@@ -524,7 +561,8 @@
       "signatureDish": "Mahi taco",
       "priceTier": "$$",
       "reservationNeeded": false
-    }
+    },
+    "photos": []
   },
   {
     "name": "The Royale",
@@ -538,7 +576,8 @@
       "specialty": "Classic cocktails",
       "vibe": "neighborhood",
       "timeOfDay": "evening"
-    }
+    },
+    "photos": []
   },
   {
     "name": "Planter's House",
@@ -552,7 +591,8 @@
       "specialty": "Craft cocktails",
       "vibe": "date night",
       "timeOfDay": "evening"
-    }
+    },
+    "photos": []
   },
   {
     "name": "Small Change",
@@ -566,7 +606,8 @@
       "specialty": "Craft cocktails",
       "vibe": "neighborhood",
       "timeOfDay": "evening"
-    }
+    },
+    "photos": []
   },
   {
     "name": "Sasha's Wine Bar",
@@ -580,7 +621,8 @@
       "specialty": "Wine",
       "vibe": "neighborhood",
       "timeOfDay": "evening"
-    }
+    },
+    "photos": []
   },
   {
     "name": "Yellowbelly",
@@ -594,7 +636,8 @@
       "specialty": "Tiki",
       "vibe": "rowdy",
       "timeOfDay": "late-night"
-    }
+    },
+    "photos": []
   },
   {
     "name": "Tick Tock Tavern",
@@ -608,7 +651,8 @@
       "specialty": "Dive",
       "vibe": "neighborhood",
       "timeOfDay": "late-night"
-    }
+    },
+    "photos": []
   },
   {
     "name": "Venice Cafe",
@@ -622,7 +666,8 @@
       "specialty": "Beer / cocktails",
       "vibe": "weird",
       "timeOfDay": "evening"
-    }
+    },
+    "photos": []
   },
   {
     "name": "Sanctuaria",
@@ -636,7 +681,8 @@
       "specialty": "Mezcal / tequila",
       "vibe": "date night",
       "timeOfDay": "evening"
-    }
+    },
+    "photos": []
   },
   {
     "name": "Bar Les Freres",
@@ -650,7 +696,8 @@
       "specialty": "Classic cocktails",
       "vibe": "date night",
       "timeOfDay": "evening"
-    }
+    },
+    "photos": []
   },
   {
     "name": "Sump Coffee",
@@ -664,7 +711,8 @@
       "specialty": "Specialty coffee",
       "vibe": "neighborhood",
       "timeOfDay": "morning"
-    }
+    },
+    "photos": []
   },
   {
     "name": "Blueprint Coffee",
@@ -678,7 +726,8 @@
       "specialty": "Specialty coffee",
       "vibe": "neighborhood",
       "timeOfDay": "morning"
-    }
+    },
+    "photos": []
   },
   {
     "name": "Civil Life Brewing Co.",
@@ -692,7 +741,8 @@
       "specialty": "Brewery (English session beers)",
       "vibe": "neighborhood",
       "timeOfDay": "afternoon"
-    }
+    },
+    "photos": []
   },
   {
     "name": "Side Project Cellar",
@@ -706,7 +756,8 @@
       "specialty": "Craft brewery / cellar",
       "vibe": "date night",
       "timeOfDay": "evening"
-    }
+    },
+    "photos": []
   },
   {
     "name": "Earthbound Beer",
@@ -720,7 +771,8 @@
       "specialty": "Brewery (cave-aged)",
       "vibe": "weird",
       "timeOfDay": "evening"
-    }
+    },
+    "photos": []
   },
   {
     "name": "Tom's Bar & Grill",
@@ -734,7 +786,8 @@
       "specialty": "Dive",
       "vibe": "neighborhood",
       "timeOfDay": "afternoon"
-    }
+    },
+    "photos": []
   },
   {
     "name": "Heavy Anchor",
@@ -748,7 +801,8 @@
       "specialty": "Dive / DIY",
       "vibe": "rowdy",
       "timeOfDay": "late-night"
-    }
+    },
+    "photos": []
   },
   {
     "name": "Mangia Italiano",
@@ -762,7 +816,8 @@
       "specialty": "Wine / late-night pasta",
       "vibe": "rowdy",
       "timeOfDay": "late-night"
-    }
+    },
+    "photos": []
   },
   {
     "name": "Gamlin Whiskey House",
@@ -776,7 +831,8 @@
       "specialty": "Whiskey",
       "vibe": "date night",
       "timeOfDay": "evening"
-    }
+    },
+    "photos": []
   },
   {
     "name": "Iron Barley",
@@ -790,7 +846,8 @@
       "specialty": "Dive / live music",
       "vibe": "neighborhood",
       "timeOfDay": "evening"
-    }
+    },
+    "photos": []
   },
   {
     "name": "Reeds American Table",
@@ -804,7 +861,8 @@
       "specialty": "Wine and seasonal cocktails",
       "vibe": "date night",
       "timeOfDay": "evening"
-    }
+    },
+    "photos": []
   },
   {
     "name": "Fitz's Root Beer",
@@ -818,7 +876,8 @@
       "specialty": "Root beer / sodas",
       "vibe": "family",
       "timeOfDay": "afternoon"
-    }
+    },
+    "photos": []
   },
   {
     "name": "Schlafly Tap Room",
@@ -832,7 +891,8 @@
       "specialty": "Brewery",
       "vibe": "neighborhood",
       "timeOfDay": "afternoon"
-    }
+    },
+    "photos": []
   },
   {
     "name": "Urban Chestnut Grove Brewery & Bierhall",
@@ -846,7 +906,8 @@
       "specialty": "Brewery (German lagers)",
       "vibe": "neighborhood",
       "timeOfDay": "evening"
-    }
+    },
+    "photos": []
   },
   {
     "name": "Three Kings Public House",
@@ -860,7 +921,8 @@
       "specialty": "Beer",
       "vibe": "neighborhood",
       "timeOfDay": "evening"
-    }
+    },
+    "photos": []
   },
   {
     "name": "Off Broadway",
@@ -874,7 +936,8 @@
       "format": "live music",
       "capacityFeel": "intimate",
       "seatedOrStanding": "mixed"
-    }
+    },
+    "photos": []
   },
   {
     "name": "Old Rock House",
@@ -888,7 +951,8 @@
       "format": "live music",
       "capacityFeel": "mid",
       "seatedOrStanding": "mixed"
-    }
+    },
+    "photos": []
   },
   {
     "name": "The Pageant",
@@ -903,8 +967,12 @@
       "capacityFeel": "big",
       "seatedOrStanding": "standing"
     },
-    "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3e/The_Pageant%2C_November_2011_%28cropped%29.jpg",
-    "photoSource": "Wikipedia: The Pageant"
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/The_Pageant%2C_November_2011_%28cropped%29.jpg/1920px-The_Pageant%2C_November_2011_%28cropped%29.jpg",
+        "source": "Wikipedia: The Pageant"
+      }
+    ]
   },
   {
     "name": "Delmar Hall",
@@ -918,7 +986,8 @@
       "format": "live music",
       "capacityFeel": "mid",
       "seatedOrStanding": "standing"
-    }
+    },
+    "photos": []
   },
   {
     "name": "Blueberry Hill Duck Room",
@@ -933,8 +1002,12 @@
       "capacityFeel": "intimate",
       "seatedOrStanding": "standing"
     },
-    "photoUrl": "https://upload.wikimedia.org/wikipedia/en/3/35/Blueberry_Hill_with_SaintLouis.png",
-    "photoSource": "Wikipedia: Blueberry Hill (restaurant)"
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/f/fd/Blueberry_Hill_patio.jpg",
+        "source": "Wikipedia: Blueberry Hill (restaurant)"
+      }
+    ]
   },
   {
     "name": "The Sheldon Concert Hall",
@@ -949,8 +1022,12 @@
       "capacityFeel": "intimate",
       "seatedOrStanding": "seated"
     },
-    "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Sheldonconcerthall.jpg",
-    "photoSource": "Wikipedia: The Sheldon"
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Sheldonconcerthall.jpg/1920px-Sheldonconcerthall.jpg",
+        "source": "Wikipedia: The Sheldon"
+      }
+    ]
   },
   {
     "name": "The Improv Shop",
@@ -964,7 +1041,8 @@
       "format": "comedy / improv",
       "capacityFeel": "intimate",
       "seatedOrStanding": "seated"
-    }
+    },
+    "photos": []
   },
   {
     "name": "The Heavy Anchor (back room)",
@@ -978,7 +1056,8 @@
       "format": "DIY / live music",
       "capacityFeel": "intimate",
       "seatedOrStanding": "standing"
-    }
+    },
+    "photos": []
   },
   {
     "name": "The Stage at KDHX",
@@ -992,7 +1071,8 @@
       "format": "live music / radio",
       "capacityFeel": "intimate",
       "seatedOrStanding": "seated"
-    }
+    },
+    "photos": []
   },
   {
     "name": "The Ready Room",
@@ -1006,7 +1086,8 @@
       "format": "live music",
       "capacityFeel": "mid",
       "seatedOrStanding": "standing"
-    }
+    },
+    "photos": []
   },
   {
     "name": "Bellefontaine Cemetery",
@@ -1021,8 +1102,28 @@
       "timeNeeded": "2 hrs",
       "tickets": "free"
     },
-    "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/2/20/Wainwright_Tomb_2013.jpg",
-    "photoSource": "Wikipedia: Bellefontaine Cemetery"
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Busch_Mausoleum_2013.jpg/1920px-Busch_Mausoleum_2013.jpg",
+        "source": "Wikipedia: Bellefontaine Cemetery"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/David_R._Francis_Grave_2013.jpg/1920px-David_R._Francis_Grave_2013.jpg",
+        "source": "Wikipedia: Bellefontaine Cemetery"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/0/01/Louis_Sullivan_circa_1895.jpg",
+        "source": "Wikipedia: Bellefontaine Cemetery"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/1/10/Paramore_Mausoleum.JPG",
+        "source": "Wikipedia: Bellefontaine Cemetery"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Wainwright_Tomb_2013.jpg/1920px-Wainwright_Tomb_2013.jpg",
+        "source": "Wikipedia: Bellefontaine Cemetery"
+      }
+    ]
   },
   {
     "name": "Frank Lloyd Wright's Ebsworth Park (Kraus House)",
@@ -1036,7 +1137,8 @@
       "storyHook": "Only Frank Lloyd Wright house in the St. Louis area, on a parallelogram module.",
       "timeNeeded": "1 hr",
       "tickets": "$15"
-    }
+    },
+    "photos": []
   },
   {
     "name": "Cathedral Basilica of Saint Louis",
@@ -1051,8 +1153,32 @@
       "timeNeeded": "1 hr",
       "tickets": "free"
     },
-    "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/b/ba/Cathedral_Basilica_of_Saint_Louis_%28St._Louis%2C_MO%29_-_exterior%2C_quarter_view_2.jpg",
-    "photoSource": "Wikipedia: Cathedral Basilica of Saint Louis"
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/5/5a/046CupolaSPietro.jpg",
+        "source": "Wikipedia: Cathedral Basilica of Saint Louis"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/d/d2/All_Saints_Chapel--L.C._Tiffany.JPG",
+        "source": "Wikipedia: Cathedral Basilica of Saint Louis"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/3/37/Cardinal_John_Glennon_grave.jpg",
+        "source": "Wikipedia: Cathedral Basilica of Saint Louis"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/3/38/CathedralSTLBasilicaBell.JPG",
+        "source": "Wikipedia: Cathedral Basilica of Saint Louis"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/b/bb/CathedralSTLOldConsole.JPG",
+        "source": "Wikipedia: Cathedral Basilica of Saint Louis"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Cathedral_Basilica%2C_St_Louis_4022.jpg/1920px-Cathedral_Basilica%2C_St_Louis_4022.jpg",
+        "source": "Wikipedia: Cathedral Basilica of Saint Louis"
+      }
+    ]
   },
   {
     "name": "City Museum",
@@ -1067,8 +1193,32 @@
       "timeNeeded": "half-day",
       "tickets": "$22"
     },
-    "photoUrl": "https://upload.wikimedia.org/wikipedia/en/thumb/5/59/City_Museum_logo.svg/330px-City_Museum_logo.svg.png",
-    "photoSource": "Wikipedia: City Museum (St. Louis, Missouri)"
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/f/f2/City_Museum%2C_St_Louis_MO_988773_1280.jpg",
+        "source": "Wikipedia: City Museum (St. Louis, Missouri)"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/City_Museum_10-Story_Slide.jpg/1920px-City_Museum_10-Story_Slide.jpg",
+        "source": "Wikipedia: City Museum (St. Louis, Missouri)"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/City_Museum_Aquarium.jpg/1920px-City_Museum_Aquarium.jpg",
+        "source": "Wikipedia: City Museum (St. Louis, Missouri)"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/City_Museum_Caves.jpg/1920px-City_Museum_Caves.jpg",
+        "source": "Wikipedia: City Museum (St. Louis, Missouri)"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/City_Museum_Naked_Lady.jpg/1920px-City_Museum_Naked_Lady.jpg",
+        "source": "Wikipedia: City Museum (St. Louis, Missouri)"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/City_Museum_Outside_Patio.jpg/1920px-City_Museum_Outside_Patio.jpg",
+        "source": "Wikipedia: City Museum (St. Louis, Missouri)"
+      }
+    ]
   },
   {
     "name": "Cahokia Mounds",
@@ -1083,8 +1233,32 @@
       "timeNeeded": "half-day",
       "tickets": "donation"
     },
-    "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Monks_Mound_-_Summer_2024.jpg/3840px-Monks_Mound_-_Summer_2024.jpg",
-    "photoSource": "Wikipedia: Cahokia Mounds"
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/b/bf/Birdman_Tablet_cropped.jpg",
+        "source": "Wikipedia: Cahokia Mounds"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/a/ad/Cahokia_1.jpg",
+        "source": "Wikipedia: Cahokia Mounds"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/2/26/Cahokia_Aerial_HRoe_2015.jpg",
+        "source": "Wikipedia: Cahokia Mounds"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/c/c2/Cahokia_Mound_72.jpg",
+        "source": "Wikipedia: Cahokia Mounds"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Cahokia_Mounds_--_UNESCO_reconstruction.jpg/1920px-Cahokia_Mounds_--_UNESCO_reconstruction.jpg",
+        "source": "Wikipedia: Cahokia Mounds"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/75/Cahokia_monks_mound_McAdams_1887.jpg",
+        "source": "Wikipedia: Cahokia Mounds"
+      }
+    ]
   },
   {
     "name": "Lemp Mansion",
@@ -1099,8 +1273,12 @@
       "timeNeeded": "2 hrs",
       "tickets": "$20"
     },
-    "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c5/Lemp_Mansion_2012.jpg",
-    "photoSource": "Wikipedia: Lemp Mansion"
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/c/c5/Lemp_Mansion_2012.jpg",
+        "source": "Wikipedia: Lemp Mansion"
+      }
+    ]
   },
   {
     "name": "Pulitzer Arts Foundation",
@@ -1115,8 +1293,12 @@
       "timeNeeded": "1 hr",
       "tickets": "free"
     },
-    "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/a/ae/Pulitzerfoundation.jpg",
-    "photoSource": "Wikipedia: Pulitzer Arts Foundation"
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Pulitzerfoundation.jpg/1920px-Pulitzerfoundation.jpg",
+        "source": "Wikipedia: Pulitzer Arts Foundation"
+      }
+    ]
   },
   {
     "name": "Contemporary Art Museum St. Louis",
@@ -1131,8 +1313,12 @@
       "timeNeeded": "1 hr",
       "tickets": "free"
     },
-    "photoUrl": "https://upload.wikimedia.org/wikipedia/en/3/32/Contemporary_Art_Museum_St._Louis_Logo.jpg",
-    "photoSource": "Wikipedia: Contemporary Art Museum St. Louis"
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Contemporarystlouis-net.jpg",
+        "source": "Wikipedia: Contemporary Art Museum St. Louis"
+      }
+    ]
   },
   {
     "name": "Laumeier Sculpture Park",
@@ -1147,8 +1333,12 @@
       "timeNeeded": "2 hrs",
       "tickets": "free"
     },
-    "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/9/93/Laumeier_Sculpture_Park_02.jpg",
-    "photoSource": "Wikipedia: Laumeier Sculpture Park"
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Laumeier_Sculpture_Park_02.jpg/1920px-Laumeier_Sculpture_Park_02.jpg",
+        "source": "Wikipedia: Laumeier Sculpture Park"
+      }
+    ]
   },
   {
     "name": "Old Cathedral (Basilica of Saint Louis, King of France)",
@@ -1163,8 +1353,28 @@
       "timeNeeded": "30 min",
       "tickets": "free"
     },
-    "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Basilica_of_St._Louis_2025c.jpg/3840px-Basilica_of_St._Louis_2025c.jpg",
-    "photoSource": "Wikipedia: Basilica of St. Louis, King of France"
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/%28_1845_%29_Old_St._Louis_Cathedral_%2851152567954%29.jpg/1920px-%28_1845_%29_Old_St._Louis_Cathedral_%2851152567954%29.jpg",
+        "source": "Wikipedia: Basilica of St. Louis, King of France"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/5/5a/046CupolaSPietro.jpg",
+        "source": "Wikipedia: Basilica of St. Louis, King of France"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Basilica_of_Saint_Louis%2C_King_of_France_%28St._Louis%2C_MO%29_-_interior.jpg/1920px-Basilica_of_Saint_Louis%2C_King_of_France_%28St._Louis%2C_MO%29_-_interior.jpg",
+        "source": "Wikipedia: Basilica of St. Louis, King of France"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Basilica_of_St._Louis_2025c.jpg/1920px-Basilica_of_St._Louis_2025c.jpg",
+        "source": "Wikipedia: Basilica of St. Louis, King of France"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/3/3f/First_Catholic_church_in_St_Louis_Missouri.jpg",
+        "source": "Wikipedia: Basilica of St. Louis, King of France"
+      }
+    ]
   },
   {
     "name": "Compton Hill Water Tower",
@@ -1179,8 +1389,20 @@
       "timeNeeded": "1 hr",
       "tickets": "$5"
     },
-    "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/5/54/Compton_Hill_Water_Tower.jpg",
-    "photoSource": "Wikipedia: Compton Hill Reservoir Park"
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/%22Stand_Pipe_No._3%2C_-_January_21st%2C_1899.%22_%28Compton_Hill_Water_Tower_under_scaffolding_during_construction%29.jpg/1920px-%22Stand_Pipe_No._3%2C_-_January_21st%2C_1899.%22_%28Compton_Hill_Water_Tower_under_scaffolding_during_construction%29.jpg",
+        "source": "Wikipedia: Compton Hill Reservoir Park"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/5/54/Compton_Hill_Water_Tower.jpg",
+        "source": "Wikipedia: Compton Hill Reservoir Park"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/6/69/Naked_Truth.jpg",
+        "source": "Wikipedia: Compton Hill Reservoir Park"
+      }
+    ]
   },
   {
     "name": "International Bowling Museum & Hall of Fame",
@@ -1195,8 +1417,12 @@
       "timeNeeded": "2 hrs",
       "tickets": "$12"
     },
-    "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/International_Bowling_Museum_and_Hall_of_Fame_April_2019_01.jpg/3840px-International_Bowling_Museum_and_Hall_of_Fame_April_2019_01.jpg",
-    "photoSource": "Wikipedia: International Bowling Museum and Hall of Fame"
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/International_Bowling_Museum_and_Hall_of_Fame_April_2019_01.jpg/1920px-International_Bowling_Museum_and_Hall_of_Fame_April_2019_01.jpg",
+        "source": "Wikipedia: International Bowling Museum and Hall of Fame"
+      }
+    ]
   },
   {
     "name": "World Chess Hall of Fame",
@@ -1211,8 +1437,12 @@
       "timeNeeded": "1 hr",
       "tickets": "free"
     },
-    "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Chess_Club_and_Scholastic_Center_of_Saint_Louis.jpg",
-    "photoSource": "Wikipedia: World Chess Hall of Fame"
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Chess_Club_and_Scholastic_Center_of_Saint_Louis.jpg/1920px-Chess_Club_and_Scholastic_Center_of_Saint_Louis.jpg",
+        "source": "Wikipedia: World Chess Hall of Fame"
+      }
+    ]
   },
   {
     "name": "Magic House",
@@ -1227,8 +1457,12 @@
       "timeNeeded": "half-day",
       "tickets": "$15"
     },
-    "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/0/00/The_Magic_House_Logo.JPG",
-    "photoSource": "Wikipedia: The Magic House, St. Louis Children's Museum"
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/3/3d/Bldg_south_w_signage_%28Small_File%29.jpg",
+        "source": "Wikipedia: The Magic House, St. Louis Children's Museum"
+      }
+    ]
   },
   {
     "name": "Campbell House Museum",
@@ -1243,8 +1477,12 @@
       "timeNeeded": "1 hr",
       "tickets": "$10"
     },
-    "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/7/7b/Campbell_House_Exterior.JPG",
-    "photoSource": "Wikipedia: Campbell House Museum"
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/7b/Campbell_House_Exterior.JPG",
+        "source": "Wikipedia: Campbell House Museum"
+      }
+    ]
   },
   {
     "name": "Eugene Field House",
@@ -1258,7 +1496,8 @@
       "storyHook": "Birthplace of the children's-poet Eugene Field, full of antique toys.",
       "timeNeeded": "1 hr",
       "tickets": "$8"
-    }
+    },
+    "photos": []
   },
   {
     "name": "Griot Museum of Black History",
@@ -1272,7 +1511,8 @@
       "storyHook": "Black history museum centered on Missouri and the wider region.",
       "timeNeeded": "1 hr",
       "tickets": "$10"
-    }
+    },
+    "photos": []
   },
   {
     "name": "Saint Louis Art Museum",
@@ -1287,8 +1527,32 @@
       "timeNeeded": "2 hrs",
       "tickets": "free"
     },
-    "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/StLouisArtMuseum.jpg/3840px-StLouisArtMuseum.jpg",
-    "photoSource": "Wikipedia: Saint Louis Art Museum"
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Albert_Bierstadt_-_Surveyor%E2%80%99s_Wagon_in_the_Rockies_-_158-1953_-_Saint_Louis_Art_Museum.jpg/1920px-Albert_Bierstadt_-_Surveyor%E2%80%99s_Wagon_in_the_Rockies_-_158-1953_-_Saint_Louis_Art_Museum.jpg",
+        "source": "Wikipedia: Saint Louis Art Museum"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Amedeo_Modigliani_-_Elvira_Resting_at_a_Table_-_77-1968_-_Saint_Louis_Art_Museum.jpg/1920px-Amedeo_Modigliani_-_Elvira_Resting_at_a_Table_-_77-1968_-_Saint_Louis_Art_Museum.jpg",
+        "source": "Wikipedia: Saint Louis Art Museum"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Anders_Leonard_Zorn_-_Lucy_Turner_Joy_-_97-1917_-_Saint_Louis_Art_Museum.jpg/1920px-Anders_Leonard_Zorn_-_Lucy_Turner_Joy_-_97-1917_-_Saint_Louis_Art_Museum.jpg",
+        "source": "Wikipedia: Saint Louis Art Museum"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Artemisia_Gentileschi_-_Dana%C3%AB_-_93-1986_-_Saint_Louis_Art_Museum.jpg/1920px-Artemisia_Gentileschi_-_Dana%C3%AB_-_93-1986_-_Saint_Louis_Art_Museum.jpg",
+        "source": "Wikipedia: Saint Louis Art Museum"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Bartolomeo_Manfredi_-_Apollo_and_Marsyas_-_62-2004_-_Saint_Louis_Art_Museum.jpg/1920px-Bartolomeo_Manfredi_-_Apollo_and_Marsyas_-_62-2004_-_Saint_Louis_Art_Museum.jpg",
+        "source": "Wikipedia: Saint Louis Art Museum"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Benjamin_West_-_Daniel_Interpreting_to_Belshazzar_the_Writing_on_the_Wall_-_485-2018_-_Saint_Louis_Art_Museum.jpg/1920px-Benjamin_West_-_Daniel_Interpreting_to_Belshazzar_the_Writing_on_the_Wall_-_485-2018_-_Saint_Louis_Art_Museum.jpg",
+        "source": "Wikipedia: Saint Louis Art Museum"
+      }
+    ]
   },
   {
     "name": "Missouri History Museum",
@@ -1303,8 +1567,24 @@
       "timeNeeded": "2 hrs",
       "tickets": "free"
     },
-    "photoUrl": "https://upload.wikimedia.org/wikipedia/en/3/3f/Missouri_History_Museum_Logo.png",
-    "photoSource": "Wikipedia: Missouri History Museum"
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Carriage_display_in_Missouri_History_Museum.jpg",
+        "source": "Wikipedia: Missouri History Museum"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Forest_Park_%28St._Louis%29.png/1920px-Forest_Park_%28St._Louis%29.png",
+        "source": "Wikipedia: Missouri History Museum"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/MissouriHistoryMuseum.png/1920px-MissouriHistoryMuseum.png",
+        "source": "Wikipedia: Missouri History Museum"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Missouri_History_Center.jpg/1920px-Missouri_History_Center.jpg",
+        "source": "Wikipedia: Missouri History Museum"
+      }
+    ]
   },
   {
     "name": "Mildred Lane Kemper Art Museum",
@@ -1319,8 +1599,32 @@
       "timeNeeded": "1 hr",
       "tickets": "free"
     },
-    "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a1/Kemper_Art_Museum_at_Wash_U.jpg",
-    "photoSource": "Wikipedia: Mildred Lane Kemper Art Museum"
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/d/dd/Aelbert_Cuyp_-_Cows_with_a_Milkmaid_in_a_Farmyard.jpg",
+        "source": "Wikipedia: Mildred Lane Kemper Art Museum"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Brookings_Hall.jpg/1920px-Brookings_Hall.jpg",
+        "source": "Wikipedia: Mildred Lane Kemper Art Museum"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/5/55/Edvard_Munch_-_Irmgard_Steinbart.jpg",
+        "source": "Wikipedia: Mildred Lane Kemper Art Museum"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/70/El_Greco_-_Resurrection%2C_Kemper_Art_Museum_%28c._1600-05%29.jpg",
+        "source": "Wikipedia: Mildred Lane Kemper Art Museum"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/8/83/Frederic_Edwin_Church_-_Sierra_Nevada_de_Santa_Marta.jpg",
+        "source": "Wikipedia: Mildred Lane Kemper Art Museum"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/7c/George_Bellows_-_Garaldine_Lee%2C_No._1_%281914%29.jpg",
+        "source": "Wikipedia: Mildred Lane Kemper Art Museum"
+      }
+    ]
   },
   {
     "name": "Soulard Farmers Market",
@@ -1335,8 +1639,24 @@
       "timeNeeded": "1 hr",
       "tickets": "free"
     },
-    "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Busy_Saturday_Morning_%40_Soulard_Market_%286024141476%29.jpg/3840px-Busy_Saturday_Morning_%40_Soulard_Market_%286024141476%29.jpg",
-    "photoSource": "Wikipedia: Soulard Farmers Market"
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Busy_Saturday_Morning_%40_Soulard_Market_%286024141476%29.jpg/1920px-Busy_Saturday_Morning_%40_Soulard_Market_%286024141476%29.jpg",
+        "source": "Wikipedia: Soulard Farmers Market"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/5/51/Drawing_by_Marguerite_Martyn_of_Soulard_Market%2C_St._Louis%2C_in_1912.jpg",
+        "source": "Wikipedia: Soulard Farmers Market"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Eighth_Street._Soulard_Market_with_crowds.jpg/1920px-Eighth_Street._Soulard_Market_with_crowds.jpg",
+        "source": "Wikipedia: Soulard Farmers Market"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/3/3c/SoulardMarketSTL.jpg",
+        "source": "Wikipedia: Soulard Farmers Market"
+      }
+    ]
   },
   {
     "name": "Climatron at Missouri Botanical Garden",
@@ -1351,8 +1671,16 @@
       "timeNeeded": "1 hr",
       "tickets": "$16"
     },
-    "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Climatron%2C_Missouri_Botanical_Gardens.jpg",
-    "photoSource": "Wikipedia: Climatron"
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Climatron%2C_Missouri_Botanical_Gardens.jpg/1920px-Climatron%2C_Missouri_Botanical_Gardens.jpg",
+        "source": "Wikipedia: Climatron"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/8/87/Climatron_INTERIOR_VIEW%2C_HABS_MO%2C96-SALU%2C105L-8.jpg",
+        "source": "Wikipedia: Climatron"
+      }
+    ]
   },
   {
     "name": "Jefferson Barracks Park",
@@ -1367,7 +1695,33 @@
       "distanceOrTrail": "Several connected trails, 3+ mi available",
       "season": "year-round",
       "accessibility": "stroller-friendly on main paths"
-    }
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/8/8b/1902.10.07_VP_leaves_Boat.jpg",
+        "source": "Wikipedia: Jefferson Barracks Military Post"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Army_Air_Forces_-_Postcard_-_Jefferson_Barracks_Missouri.jpg",
+        "source": "Wikipedia: Jefferson Barracks Military Post"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/e/ed/Army_Air_Forces_Training_Command_-_Patch.png",
+        "source": "Wikipedia: Jefferson Barracks Military Post"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Battery_Alpha_Jefferson_Barracks.jpg",
+        "source": "Wikipedia: Jefferson Barracks Military Post"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Jefferson_Barracks_Civil_War.jpg",
+        "source": "Wikipedia: Jefferson Barracks Military Post"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/b/ba/Jefferson_Barracks_WWII.jpg",
+        "source": "Wikipedia: Jefferson Barracks Military Post"
+      }
+    ]
   },
   {
     "name": "Castlewood State Park",
@@ -1383,8 +1737,16 @@
       "season": "spring/fall best",
       "accessibility": "rugged"
     },
-    "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Castlewoodscenic.JPG",
-    "photoSource": "Wikipedia: Castlewood State Park"
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Castlewood_SP_Panorama_20090802.jpg/1920px-Castlewood_SP_Panorama_20090802.jpg",
+        "source": "Wikipedia: Castlewood State Park"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Castlewoodscenic.JPG/1920px-Castlewoodscenic.JPG",
+        "source": "Wikipedia: Castlewood State Park"
+      }
+    ]
   },
   {
     "name": "Shaw Nature Reserve",
@@ -1400,8 +1762,32 @@
       "season": "year-round",
       "accessibility": "mixed"
     },
-    "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Shaw_Nature_Reserve_magnolias_and_daffodils_1.jpg",
-    "photoSource": "Wikipedia: Shaw Nature Reserve"
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/-_8238_%E2%80%93_Euchaetes_egle_%E2%80%93_Milkweed_Tussock_Moth_%28caterpillar%29_%2821415126229%29.jpg/1920px--_8238_%E2%80%93_Euchaetes_egle_%E2%80%93_Milkweed_Tussock_Moth_%28caterpillar%29_%2821415126229%29.jpg",
+        "source": "Wikipedia: Shaw Nature Reserve"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/4/44/Eastern_Bluebird_%288014007593%29.jpg",
+        "source": "Wikipedia: Shaw Nature Reserve"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Passiflora_incarnata_-_Passion_flower_%2814662663880%29.jpg/1920px-Passiflora_incarnata_-_Passion_flower_%2814662663880%29.jpg",
+        "source": "Wikipedia: Shaw Nature Reserve"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/en/4/4d/Shaw_Nature_Preserve_topo1.jpg",
+        "source": "Wikipedia: Shaw Nature Reserve"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Shaw_Nature_Reserve_magnolias_and_daffodils_1.jpg/1920px-Shaw_Nature_Reserve_magnolias_and_daffodils_1.jpg",
+        "source": "Wikipedia: Shaw Nature Reserve"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/0/02/Ucscprotea4.jpg",
+        "source": "Wikipedia: Shaw Nature Reserve"
+      }
+    ]
   },
   {
     "name": "Missouri Botanical Garden",
@@ -1416,7 +1802,33 @@
       "distanceOrTrail": "79 acres",
       "season": "year-round",
       "accessibility": "stroller-friendly"
-    }
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Children%27s_area%2C_Missouri_Botanical_Garden.jpg/1920px-Children%27s_area%2C_Missouri_Botanical_Garden.jpg",
+        "source": "Wikipedia: Missouri Botanical Garden"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Children%27s_water_play_area%2C_Missouri_Botanical_Garden.jpg/1920px-Children%27s_water_play_area%2C_Missouri_Botanical_Garden.jpg",
+        "source": "Wikipedia: Missouri Botanical Garden"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Climatron%2C_Missouri_Botanical_Gardens.jpg/1920px-Climatron%2C_Missouri_Botanical_Gardens.jpg",
+        "source": "Wikipedia: Missouri Botanical Garden"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Eight_Bridges_Missouri_Botanical_Gardens.jpg/1920px-Eight_Bridges_Missouri_Botanical_Gardens.jpg",
+        "source": "Wikipedia: Missouri Botanical Garden"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/English_Woodland_Garden_at_the_Missouri_Botanical_Garden.jpg/1920px-English_Woodland_Garden_at_the_Missouri_Botanical_Garden.jpg",
+        "source": "Wikipedia: Missouri Botanical Garden"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Flowers_and_statuary%2C_Shaw%27s_Garden%2C_St._Louis%2C_by_Ingersoll%2C_T._W._%28Truman_Ward%29%2C_1862-1922.png/1920px-Flowers_and_statuary%2C_Shaw%27s_Garden%2C_St._Louis%2C_by_Ingersoll%2C_T._W._%28Truman_Ward%29%2C_1862-1922.png",
+        "source": "Wikipedia: Missouri Botanical Garden"
+      }
+    ]
   },
   {
     "name": "Tower Grove Park",
@@ -1432,8 +1844,32 @@
       "season": "year-round",
       "accessibility": "stroller-friendly"
     },
-    "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Tower_Grove_Park_Scene_1.jpg",
-    "photoSource": "Wikipedia: Tower Grove Park"
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/0/02/Bandstand_in_Tower_Grove_Park.jpg",
+        "source": "Wikipedia: Tower Grove Park"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/3/32/Chinese_Pavilion_%28Pagoda%29_in_Tower_Grove_Park.jpg",
+        "source": "Wikipedia: Tower Grove Park"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Sons_of_Rest_Pavilion_in_Tower_Grove_Park.jpg",
+        "source": "Wikipedia: Tower Grove Park"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Tower_Grove_Park_-_Magnolia_at_Tower_Grove_Ave.jpg/1920px-Tower_Grove_Park_-_Magnolia_at_Tower_Grove_Ave.jpg",
+        "source": "Wikipedia: Tower Grove Park"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Tower_Grove_Park_Scene_1.jpg",
+        "source": "Wikipedia: Tower Grove Park"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Tulips_in_Tower_Grove_Park.jpg/1920px-Tulips_in_Tower_Grove_Park.jpg",
+        "source": "Wikipedia: Tower Grove Park"
+      }
+    ]
   },
   {
     "name": "Powder Valley Conservation Nature Center",
@@ -1448,7 +1884,8 @@
       "distanceOrTrail": "3 mi total across 3 trails",
       "season": "year-round",
       "accessibility": "mixed"
-    }
+    },
+    "photos": []
   },
   {
     "name": "Cliff Cave County Park",
@@ -1463,7 +1900,8 @@
       "distanceOrTrail": "3.5 mi loop",
       "season": "year-round",
       "accessibility": "rugged"
-    }
+    },
+    "photos": []
   },
   {
     "name": "Klondike Park",
@@ -1478,7 +1916,8 @@
       "distanceOrTrail": "Katy Trail spur + 3 mi park trails",
       "season": "spring/fall best",
       "accessibility": "mixed"
-    }
+    },
+    "photos": []
   },
   {
     "name": "Katy Trail (Defiance to Augusta)",
@@ -1493,7 +1932,8 @@
       "distanceOrTrail": "Defiance to Augusta, 7 mi one-way",
       "season": "spring/fall best",
       "accessibility": "stroller-friendly"
-    }
+    },
+    "photos": []
   },
   {
     "name": "Creve Coeur Lake Memorial Park",
@@ -1508,7 +1948,8 @@
       "distanceOrTrail": "3.7 mi loop",
       "season": "year-round",
       "accessibility": "stroller-friendly"
-    }
+    },
+    "photos": []
   },
   {
     "name": "Bee Tree Park",
@@ -1523,7 +1964,8 @@
       "distanceOrTrail": "1.5 mi trails",
       "season": "year-round",
       "accessibility": "stroller-friendly"
-    }
+    },
+    "photos": []
   },
   {
     "name": "Pere Marquette State Park",
@@ -1539,8 +1981,16 @@
       "season": "winter eagles, fall color",
       "accessibility": "rugged"
     },
-    "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Pere_Marquette_Park.jpg",
-    "photoSource": "Wikipedia: Pere Marquette State Park"
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/HistoricPlacesNationalRegisterPlaque.JPG/1920px-HistoricPlacesNationalRegisterPlaque.JPG",
+        "source": "Wikipedia: Pere Marquette State Park"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Pere_Marquette_Park.jpg/1920px-Pere_Marquette_Park.jpg",
+        "source": "Wikipedia: Pere Marquette State Park"
+      }
+    ]
   },
   {
     "name": "Forest Park (Kennedy Forest trails)",
@@ -1556,8 +2006,32 @@
       "season": "year-round",
       "accessibility": "mixed"
     },
-    "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Forest_Park%2C_St_Louis.jpg",
-    "photoSource": "Wikipedia: Forest Park (St. Louis)"
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/b/bf/1904_Flight_Cage.JPG",
+        "source": "Wikipedia: Forest Park (St. Louis)"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/5/56/Apotheosis-of-saint-louis-side-view.jpg",
+        "source": "Wikipedia: Forest Park (St. Louis)"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/7a/ForestParkFootbridge.JPG",
+        "source": "Wikipedia: Forest Park (St. Louis)"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/ForestParkFountain.jpg/1920px-ForestParkFountain.jpg",
+        "source": "Wikipedia: Forest Park (St. Louis)"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/ForestParkWineFestival.jpg/1920px-ForestParkWineFestival.jpg",
+        "source": "Wikipedia: Forest Park (St. Louis)"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Forest_Park%2C_St_Louis.jpg",
+        "source": "Wikipedia: Forest Park (St. Louis)"
+      }
+    ]
   },
   {
     "name": "Riverlands Migratory Bird Sanctuary",
@@ -1572,7 +2046,8 @@
       "distanceOrTrail": "Multiple boardwalks, 4+ mi",
       "season": "fall/winter best",
       "accessibility": "stroller-friendly"
-    }
+    },
+    "photos": []
   },
   {
     "name": "River des Peres Greenway",
@@ -1587,7 +2062,8 @@
       "distanceOrTrail": "10+ mi paved",
       "season": "year-round",
       "accessibility": "stroller-friendly"
-    }
+    },
+    "photos": []
   },
   {
     "name": "Vintage Vinyl",
@@ -1601,7 +2077,8 @@
       "specialty": "Vintage records",
       "vibe": "deep dig, knowledgeable staff",
       "priceTier": "$$"
-    }
+    },
+    "photos": []
   },
   {
     "name": "Euclid Records",
@@ -1615,7 +2092,8 @@
       "specialty": "Records, new and used",
       "vibe": "browse for hours",
       "priceTier": "$$"
-    }
+    },
+    "photos": []
   },
   {
     "name": "Left Bank Books",
@@ -1629,7 +2107,8 @@
       "specialty": "Independent books",
       "vibe": "literary",
       "priceTier": "$$"
-    }
+    },
+    "photos": []
   },
   {
     "name": "Subterranean Books",
@@ -1643,7 +2122,8 @@
       "specialty": "Independent books",
       "vibe": "tight curation",
       "priceTier": "$$"
-    }
+    },
+    "photos": []
   },
   {
     "name": "Dunaway Books",
@@ -1657,7 +2137,8 @@
       "specialty": "Used and rare books",
       "vibe": "labyrinthine",
       "priceTier": "$"
-    }
+    },
+    "photos": []
   },
   {
     "name": "Retro 101",
@@ -1671,7 +2152,8 @@
       "specialty": "Mid-century vintage",
       "vibe": "curated thrift",
       "priceTier": "$$"
-    }
+    },
+    "photos": []
   },
   {
     "name": "STL-Style House",
@@ -1685,7 +2167,8 @@
       "specialty": "Local apparel and design",
       "vibe": "playful local",
       "priceTier": "$$"
-    }
+    },
+    "photos": []
   },
   {
     "name": "The Future Antiques",
@@ -1699,7 +2182,8 @@
       "specialty": "Antiques and vintage",
       "vibe": "treasure hunt",
       "priceTier": "$$"
-    }
+    },
+    "photos": []
   },
   {
     "name": "Penzeys Spices",
@@ -1713,7 +2197,8 @@
       "specialty": "Spices",
       "vibe": "sensory",
       "priceTier": "$$"
-    }
+    },
+    "photos": []
   },
   {
     "name": "Bertarelli Cutlery",
@@ -1727,6 +2212,7 @@
       "specialty": "Knives and kitchenware",
       "vibe": "old-school specialty",
       "priceTier": "$$$"
-    }
+    },
+    "photos": []
   }
 ]

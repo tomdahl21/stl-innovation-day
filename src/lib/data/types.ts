@@ -11,6 +11,11 @@ export type Contributor = {
   joinedAt: string;
 };
 
+export type Photo = {
+  url: string;
+  source?: string;
+};
+
 export type Place = {
   id: string;
   name: string;
@@ -24,8 +29,7 @@ export type Place = {
   saveCount: number;
   createdAt: string;
   tags?: string[];
-  photoUrl?: string;
-  photoSource?: string;
+  photos: Photo[];
 };
 
 export type LogbookState = "been" | "want" | "saved";

@@ -22,8 +22,7 @@ type RawSeed = {
   pitch: string;
   archetypeData: Record<string, unknown>;
   tags?: string[];
-  photoUrl?: string;
-  photoSource?: string;
+  photos?: { url: string; source?: string }[];
 };
 
 function isArchetypeName(s: string): s is ArchetypeName {
@@ -63,8 +62,7 @@ function buildPlaces(): Place[] {
       saveCount: 1 + ((idx * 7) % 22),
       createdAt: "2026-03-01T00:00:00Z",
       tags: r.tags,
-      photoUrl: r.photoUrl,
-      photoSource: r.photoSource,
+      photos: r.photos ?? [],
     });
   });
 

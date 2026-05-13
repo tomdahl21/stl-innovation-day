@@ -298,6 +298,7 @@ export const useAppStore = create<StoreState & StoreActions>()(
           archetypeData: draft.archetypeData,
           saveCount: 0,
           createdAt: now(),
+          photos: [],
         };
         set((s) => ({
           userPlaces: [...s.userPlaces, place],
