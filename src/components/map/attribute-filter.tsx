@@ -1,9 +1,23 @@
 "use client";
 
 import { createPortal } from "react-dom";
-import { useEffect, useState } from "react";
+import { useSyncExternalStore } from "react";
 import { useAppStore } from "@/lib/data/store";
 import { cn } from "@/lib/cn";
+
+// Defers the portal until after client hydration to avoid SSR/CSR mismatch
+// (document.body doesn't exist server-side). useSyncExternalStore returns the
+// server snapshot during the initial client render, then switches to the
+// client snapshot on the next paint — same effect as a mounted-flag with
+// useEffect, without tripping the no-setState-in-effect lint rule.
+const noop = () => () => {};
+function useMountedClient(): boolean {
+  return useSyncExternalStore(
+    noop,
+    () => true,
+    () => false,
+  );
+}
 
 export const ATTRIBUTE_TAGS = [
   { id: "family-friendly", label: "Family-friendly" },
@@ -57,8 +71,7 @@ export function AttributeFilterSheet({
   const toggleAttributeFilter = useAppStore((s) => s.toggleAttributeFilter);
   const clearAttributeFilter = useAppStore((s) => s.clearAttributeFilter);
 
-  const [mounted, setMounted] = useState(false);
-  useEffect(() => setMounted(true), []);
+  const mounted = useMountedClient();
   if (!mounted || !open) return null;
 
   return createPortal(

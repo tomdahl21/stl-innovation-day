@@ -42,16 +42,23 @@ export function Logbook() {
         <h2 className="serif-heading text-2xl text-ink">Your logbook</h2>
         <button
           onClick={() => setOverlay(null)}
-          className="text-sm text-ink-muted hover:text-ink"
+          aria-label="Close logbook"
+          className="py-2 pl-4 text-sm text-ink-muted hover:text-ink"
         >
           Close
         </button>
       </div>
 
-      <div className="flex shrink-0 gap-5 border-b border-stone-line px-5 pb-2 pt-3">
+      <div
+        role="tablist"
+        aria-label="Logbook categories"
+        className="flex shrink-0 gap-5 border-b border-stone-line px-5 pb-2 pt-3"
+      >
         {TABS.map((t) => (
           <button
             key={t.state}
+            role="tab"
+            aria-selected={active === t.state}
             onClick={() => setActive(t.state)}
             className={cn(
               "relative pb-2 text-[11px] font-medium uppercase tracking-[0.16em]",
@@ -60,13 +67,13 @@ export function Logbook() {
           >
             {t.label} ({counts[t.state]})
             {active === t.state && (
-              <span className="absolute -bottom-[1px] left-0 right-0 h-[1.5px] bg-brick" />
+              <span aria-hidden="true" className="absolute -bottom-[1px] left-0 right-0 h-[1.5px] bg-brick" />
             )}
           </button>
         ))}
       </div>
 
-      <div className="flex-1 overflow-y-auto">
+      <div role="tabpanel" className="flex-1 overflow-y-auto">
         {entries.length === 0 ? (
           <div className="flex h-full items-center justify-center px-8 py-12 text-center">
             <p className="font-serif text-sm italic text-ink-muted">
@@ -94,14 +101,16 @@ export function Logbook() {
                   selectPlace(place.id);
                   setOverlay("place");
                 }}
+                aria-label={`View ${place.name}`}
                 className="flex w-full gap-3 border-b border-stone-line px-5 py-3 text-left hover:bg-paper-warm/40"
               >
                 <div
+                  aria-hidden="true"
                   className="h-14 w-14 shrink-0 rounded-lg bg-paper-warm"
                   style={thumbStyle(place)}
                 />
                 <div className="min-w-0 flex-1">
-                  <div className="eyebrow text-[9px] !text-brick">
+                  <div className="eyebrow !text-brick">
                     {meta.label}
                   </div>
                   <div className="serif-heading text-[14px] text-ink">
@@ -117,7 +126,10 @@ export function Logbook() {
                     </div>
                   )}
                 </div>
-                <div className="shrink-0 self-start text-[9px] uppercase tracking-[0.12em] text-ink-muted">
+                <div
+                  aria-label={`Logged ${dateStr}`}
+                  className="shrink-0 self-start text-[11px] uppercase tracking-[0.12em] text-ink-muted"
+                >
                   {dateStr}
                 </div>
               </button>

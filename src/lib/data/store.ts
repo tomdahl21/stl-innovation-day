@@ -58,6 +58,7 @@ type StoreState = {
   // Campaign id of the last monthly-feature modal the user dismissed.
   // Compared against the current campaign id to decide whether to show it.
   lastMonthlyCampaignSeen: string;
+  theme: "light" | "dark";
 };
 
 type StoreActions = {
@@ -84,6 +85,7 @@ type StoreActions = {
   setDisplayName: (name: string) => void;
   markOnboardingSeen: () => void;
   setMonthlyCampaignSeen: (id: string) => void;
+  toggleTheme: () => void;
   // ---- geolocation ----
   setUserLocation: (lat: number, lng: number) => void;
   setGeoStatus: (status: GeoStatus) => void;
@@ -122,6 +124,7 @@ export const useAppStore = create<StoreState & StoreActions>()(
       displayName: "",
       hasSeenOnboarding: false,
       lastMonthlyCampaignSeen: "",
+      theme: "light",
 
       setPersona: (id) => set({ activePersonaId: id }),
 
@@ -285,6 +288,9 @@ export const useAppStore = create<StoreState & StoreActions>()(
 
       setMonthlyCampaignSeen: (id) => set({ lastMonthlyCampaignSeen: id }),
 
+      toggleTheme: () =>
+        set((s) => ({ theme: s.theme === "light" ? "dark" : "light" })),
+
       // ---- geolocation ----
       setUserLocation: (lat, lng) => set({ userLat: lat, userLng: lng, geoStatus: "active" }),
       setGeoStatus: (status) => set({ geoStatus: status }),
@@ -353,6 +359,7 @@ export const useAppStore = create<StoreState & StoreActions>()(
         displayName: state.displayName,
         hasSeenOnboarding: state.hasSeenOnboarding,
         lastMonthlyCampaignSeen: state.lastMonthlyCampaignSeen,
+        theme: state.theme,
       }),
     },
   ),

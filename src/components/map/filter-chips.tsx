@@ -21,16 +21,23 @@ export function FilterChips({ onFilterPress }: { onFilterPress: () => void }) {
 
   return (
     <div
+      role="group"
+      aria-label="Filter by category"
       className="flex gap-1.5 overflow-x-auto px-3 py-2"
       style={{ scrollbarWidth: "none" }}
     >
-      <Chip active={isAll} onClick={() => setArchetypeFilter(null)}>
+      <Chip
+        active={isAll}
+        aria-pressed={isAll}
+        onClick={() => setArchetypeFilter(null)}
+      >
         All
       </Chip>
       {archetypeOrder.map((name) => (
         <Chip
           key={name}
           active={isActive(name)}
+          aria-pressed={isActive(name)}
           onClick={() => toggleArchetype(name)}
         >
           {archetypes[name].label}
@@ -42,7 +49,11 @@ export function FilterChips({ onFilterPress }: { onFilterPress: () => void }) {
 
       {/* Nearby toggle — only visible once location is available */}
       {geoStatus === "active" && (
-        <Chip active={nearbyMode} onClick={toggleNearbyMode}>
+        <Chip
+          active={nearbyMode}
+          aria-pressed={nearbyMode}
+          onClick={toggleNearbyMode}
+        >
           📍 Nearby{nearbyMode && ` ${nearbyRadius} mi`}
         </Chip>
       )}
@@ -90,16 +101,20 @@ function Chip({
   active,
   onClick,
   children,
+  "aria-pressed": ariaPressed,
 }: {
   active: boolean;
   onClick: () => void;
   children: React.ReactNode;
+  "aria-pressed"?: boolean;
 }) {
   return (
     <button
       onClick={onClick}
+      aria-pressed={ariaPressed}
+      /* min 44px height touch target (WCAG 2.5.5) */
       className={cn(
-        "shrink-0 whitespace-nowrap rounded-full border px-3 py-1 text-xs font-medium transition-colors",
+        "shrink-0 min-h-11 whitespace-nowrap rounded-full border px-3 text-xs font-medium transition-colors",
         active
           ? "bg-ink text-paper border-ink"
           : "bg-paper-warm/90 text-ink-soft border-stone-line hover:border-ink/40",
@@ -112,7 +127,7 @@ function Chip({
 
 function FilterIcon() {
   return (
-    <svg width="11" height="11" viewBox="0 0 11 11" fill="none">
+    <svg width="11" height="11" viewBox="0 0 11 11" fill="none" aria-hidden="true">
       <path
         d="M1 2h9M2.5 5.5h6M4 9h3"
         stroke="currentColor"

@@ -98,7 +98,8 @@ function ArchetypeStep({
         </div>
         <button
           onClick={onClose}
-          className="text-sm text-ink-muted hover:text-ink"
+          aria-label="Close add gem"
+          className="py-2 pl-4 text-sm text-ink-muted hover:text-ink"
         >
           Close
         </button>
@@ -115,9 +116,10 @@ function ArchetypeStep({
             <button
               key={name}
               onClick={() => onPick(name)}
+              aria-label={`Add ${archetypes[name].label}`}
               className="flex flex-col items-start gap-1.5 rounded-lg border border-stone-line bg-paper-warm/40 px-4 py-3.5 text-left transition-colors hover:border-ink/30 hover:bg-paper-warm/70"
             >
-              <span className="eyebrow text-[10px] !text-brick">
+              <span className="eyebrow !text-brick">
                 {archetypes[name].label}
               </span>
               <span className="font-serif text-[13px] italic leading-tight text-ink-soft">
@@ -147,12 +149,13 @@ function DropStep({
     <div className="pointer-events-none absolute inset-x-0 bottom-0 z-30 flex flex-col items-stretch">
       <div className="pointer-events-auto mx-3 mb-20 rounded-xl bg-surface p-4 shadow-[0_16px_36px_-14px_rgba(26,22,18,0.4)] ring-1 ring-stone-line/60">
         <div className="flex items-baseline justify-between">
-          <div className="eyebrow text-[10px] !text-brick">
+          <div className="eyebrow !text-brick">
             {archetypes[archetype].label}
           </div>
           <button
             onClick={onClose}
-            className="text-xs text-ink-muted hover:text-ink"
+            aria-label="Close"
+            className="py-1 pl-4 text-xs text-ink-muted hover:text-ink"
           >
             Close
           </button>
@@ -206,14 +209,15 @@ function FormStep({
     <div className="absolute inset-0 z-40 flex flex-col bg-surface">
       <div className="flex items-center justify-between border-b border-stone-line px-5 pt-5 pb-3">
         <div>
-          <div className="eyebrow text-[10px] !text-brick">{meta.label}</div>
+          <div className="eyebrow !text-brick">{meta.label}</div>
           <h2 className="serif-heading mt-0.5 text-2xl text-ink">
             About this gem
           </h2>
         </div>
         <button
           onClick={onClose}
-          className="text-sm text-ink-muted hover:text-ink"
+          aria-label="Close form"
+          className="py-2 pl-4 text-sm text-ink-muted hover:text-ink"
         >
           Close
         </button>
@@ -223,14 +227,15 @@ function FormStep({
         {/* Pin location */}
         <div className="mb-4 flex items-baseline justify-between rounded-lg border border-stone-line bg-paper-warm/40 px-3 py-2">
           <div>
-            <div className="eyebrow text-[9px]">Pin</div>
+            <div className="eyebrow">Pin</div>
             <div className="font-mono text-[11px] text-ink-soft">
               {draft.lat?.toFixed(4)}, {draft.lng?.toFixed(4)}
             </div>
           </div>
           <button
             onClick={onResetPin}
-            className="text-[10px] uppercase tracking-[0.14em] text-ink-muted hover:text-brick"
+            aria-label="Move pin location"
+            className="text-[11px] uppercase tracking-[0.14em] text-ink-muted hover:text-brick"
           >
             Move pin
           </button>
@@ -266,7 +271,7 @@ function FormStep({
 
         {meta.fields.length > 0 && (
           <>
-            <div className="eyebrow mt-5 mb-3 text-[10px]">
+            <div className="eyebrow mt-5 mb-3">
               {meta.label} details
             </div>
             <div className="space-y-3">
@@ -286,7 +291,8 @@ function FormStep({
       <div className="flex shrink-0 gap-2 border-t border-stone-line bg-surface px-5 py-3">
         <button
           onClick={onClose}
-          className="flex-1 rounded-lg border border-stone-line bg-paper-warm px-3 py-2.5 text-[12px] font-medium text-ink hover:border-ink/30"
+          aria-label="Cancel adding gem"
+          className="flex-1 rounded-lg border border-stone-line bg-paper-warm px-3 py-3 text-[12px] font-medium text-ink hover:border-ink/30"
         >
           Cancel
         </button>
@@ -296,8 +302,9 @@ function FormStep({
             if (canSubmit) onSubmit();
           }}
           disabled={!canSubmit && submitted}
+          aria-disabled={!canSubmit && submitted}
           className={cn(
-            "flex-[2] rounded-lg px-3 py-2.5 text-[12px] font-medium transition-colors",
+            "flex-[2] rounded-lg px-3 py-3 text-[12px] font-medium transition-colors",
             canSubmit
               ? "bg-brick text-paper hover:bg-brick-deep"
               : "bg-paper-warm text-ink-muted",
@@ -321,9 +328,10 @@ function Field({
 }) {
   return (
     <label className="mb-3 block">
-      <span className="eyebrow mb-1 block text-[10px]">
+      <span className="eyebrow mb-1 block">
         {label}
-        {required && <span className="ml-1 text-brick">·</span>}
+        {required && <span className="ml-1 text-brick" aria-hidden="true">·</span>}
+        {required && <span className="sr-only"> (required)</span>}
       </span>
       {children}
     </label>
