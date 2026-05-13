@@ -33,6 +33,8 @@ type StoreState = {
   activePersonaId: string;
   // null = "all"; otherwise the set of selected archetypes
   archetypeFilter: ArchetypeName[] | null;
+  // empty = no attribute filter; otherwise AND-match all selected tags
+  attributeFilter: string[];
   selectedPlaceId: string | null;
   overlay: OverlayKind;
   draft: AddDraft;
@@ -50,6 +52,8 @@ type StoreActions = {
   setPersona: (id: string) => void;
   toggleArchetype: (name: ArchetypeName) => void;
   setArchetypeFilter: (names: ArchetypeName[] | null) => void;
+  toggleAttributeFilter: (tag: string) => void;
+  clearAttributeFilter: () => void;
   selectPlace: (id: string | null) => void;
   setOverlay: (overlay: OverlayKind) => void;
   setLogbookState: (placeId: string, state: LogbookState | null) => void;
@@ -82,6 +86,7 @@ export const useAppStore = create<StoreState & StoreActions>()(
     (set, get) => ({
       activePersonaId: defaultPersonaId,
       archetypeFilter: null,
+      attributeFilter: [],
       selectedPlaceId: null,
       overlay: null,
       draft: emptyDraft,
@@ -109,6 +114,17 @@ export const useAppStore = create<StoreState & StoreActions>()(
       },
 
       setArchetypeFilter: (names) => set({ archetypeFilter: names }),
+
+      toggleAttributeFilter: (tag) => {
+        const current = get().attributeFilter;
+        if (current.includes(tag)) {
+          set({ attributeFilter: current.filter((t) => t !== tag) });
+        } else {
+          set({ attributeFilter: [...current, tag] });
+        }
+      },
+
+      clearAttributeFilter: () => set({ attributeFilter: [] }),
 
       selectPlace: (id) => set({ selectedPlaceId: id }),
 

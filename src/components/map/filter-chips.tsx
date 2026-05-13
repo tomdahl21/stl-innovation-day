@@ -4,8 +4,9 @@ import { archetypeOrder, archetypes, type ArchetypeName } from "@/archetypes";
 import { useAppStore } from "@/lib/data/store";
 import { cn } from "@/lib/cn";
 
-export function FilterChips() {
+export function FilterChips({ onFilterPress }: { onFilterPress: () => void }) {
   const archetypeFilter = useAppStore((s) => s.archetypeFilter);
+  const attributeFilter = useAppStore((s) => s.attributeFilter);
   const toggleArchetype = useAppStore((s) => s.toggleArchetype);
   const setArchetypeFilter = useAppStore((s) => s.setArchetypeFilter);
 
@@ -30,6 +31,28 @@ export function FilterChips() {
           {archetypes[name].label}
         </Chip>
       ))}
+
+      {/* Divider */}
+      <div className="shrink-0 w-px bg-stone-line/60 mx-0.5 self-stretch" />
+
+      {/* Attribute filter trigger */}
+      <button
+        onClick={onFilterPress}
+        className={cn(
+          "shrink-0 flex items-center gap-1.5 whitespace-nowrap rounded-full border px-3 py-1 text-xs font-medium transition-colors",
+          attributeFilter.length > 0
+            ? "bg-ink/10 text-ink border-ink/30"
+            : "bg-paper-warm/90 text-ink-soft border-stone-line hover:border-ink/40",
+        )}
+      >
+        <FilterIcon />
+        Filters
+        {attributeFilter.length > 0 && (
+          <span className="flex items-center justify-center w-4 h-4 rounded-full bg-ink text-paper text-[10px] font-semibold">
+            {attributeFilter.length}
+          </span>
+        )}
+      </button>
     </div>
   );
 }
@@ -55,5 +78,18 @@ function Chip({
     >
       {children}
     </button>
+  );
+}
+
+function FilterIcon() {
+  return (
+    <svg width="11" height="11" viewBox="0 0 11 11" fill="none">
+      <path
+        d="M1 2h9M2.5 5.5h6M4 9h3"
+        stroke="currentColor"
+        strokeWidth="1.3"
+        strokeLinecap="round"
+      />
+    </svg>
   );
 }

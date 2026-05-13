@@ -44,6 +44,7 @@ export function MapScreen() {
 
   const allPlaces = useAllPlaces();
   const archetypeFilter = useAppStore((s) => s.archetypeFilter);
+  const attributeFilter = useAppStore((s) => s.attributeFilter);
   const overlay = useAppStore((s) => s.overlay);
   const draftArchetype = useAppStore((s) => s.draft.archetype);
   const draftLat = useAppStore((s) => s.draft.lat);
@@ -173,14 +174,16 @@ export function MapScreen() {
       const marker = markersRef.current.get(p.id);
       if (!marker) continue;
       const visible =
-        archetypeFilter === null || archetypeFilter.includes(p.archetype);
+        (archetypeFilter === null || archetypeFilter.includes(p.archetype)) &&
+        (attributeFilter.length === 0 ||
+          attributeFilter.every((t) => p.tags?.includes(t)));
       if (visible) {
         if (!map.hasLayer(marker)) marker.addTo(map);
       } else {
         if (map.hasLayer(marker)) map.removeLayer(marker);
       }
     }
-  }, [mapReady, archetypeFilter, allPlaces]);
+  }, [mapReady, archetypeFilter, attributeFilter, allPlaces]);
 
   // Draft pin marker (during add flow).
   useEffect(() => {
