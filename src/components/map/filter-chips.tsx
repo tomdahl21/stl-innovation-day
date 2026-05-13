@@ -1,51 +1,25 @@
 "use client";
 
-import { archetypeOrder, archetypes, type ArchetypeName } from "@/archetypes";
 import { useAppStore } from "@/lib/data/store";
 import { cn } from "@/lib/cn";
+import { CategoryFilter } from "./category-filter";
 
 export function FilterChips({ onFilterPress }: { onFilterPress: () => void }) {
-  const archetypeFilter = useAppStore((s) => s.archetypeFilter);
   const attributeFilter = useAppStore((s) => s.attributeFilter);
-  const toggleArchetype = useAppStore((s) => s.toggleArchetype);
-  const setArchetypeFilter = useAppStore((s) => s.setArchetypeFilter);
   const nearbyMode = useAppStore((s) => s.nearbyMode);
   const nearbyRadius = useAppStore((s) => s.nearbyRadius);
   const geoStatus = useAppStore((s) => s.geoStatus);
   const toggleNearbyMode = useAppStore((s) => s.toggleNearbyMode);
   const setNearbyRadius = useAppStore((s) => s.setNearbyRadius);
 
-  const isAll = archetypeFilter === null;
-  const isActive = (name: ArchetypeName) =>
-    !isAll && archetypeFilter!.includes(name);
-
   return (
     <div
       role="group"
-      aria-label="Filter by category"
+      aria-label="Filters"
       className="flex gap-1.5 overflow-x-auto px-3 py-2"
       style={{ scrollbarWidth: "none" }}
     >
-      <Chip
-        active={isAll}
-        aria-pressed={isAll}
-        onClick={() => setArchetypeFilter(null)}
-      >
-        All
-      </Chip>
-      {archetypeOrder.map((name) => (
-        <Chip
-          key={name}
-          active={isActive(name)}
-          aria-pressed={isActive(name)}
-          onClick={() => toggleArchetype(name)}
-        >
-          {archetypes[name].label}
-        </Chip>
-      ))}
-
-      {/* Divider */}
-      <div className="shrink-0 w-px bg-stone-line/60 mx-0.5 self-stretch" />
+      <CategoryFilter />
 
       {/* Nearby toggle — only visible once location is available */}
       {geoStatus === "active" && (
