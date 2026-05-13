@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import { useAppStore } from "@/lib/data/store";
 import { usePlaceById } from "@/lib/data/places";
 import { archetypes } from "@/archetypes";
@@ -7,6 +8,7 @@ import { getPersona } from "@/lib/data/personas";
 import { cn } from "@/lib/cn";
 import { heroStyle } from "@/lib/imagery";
 import type { LogbookState } from "@/lib/data/types";
+import { AddToListSheet } from "./add-to-list-sheet";
 
 export function PlaceDetail() {
   const overlay = useAppStore((s) => s.overlay);
@@ -15,6 +17,8 @@ export function PlaceDetail() {
   const logbook = useAppStore((s) => s.logbook);
   const setLogbookState = useAppStore((s) => s.setLogbookState);
   const setLogbookNote = useAppStore((s) => s.setLogbookNote);
+
+  const [listSheetOpen, setListSheetOpen] = useState(false);
 
   const place = usePlaceById(selectedPlaceId);
   if (overlay !== "place" || !selectedPlaceId || !place) return null;
@@ -130,7 +134,17 @@ export function PlaceDetail() {
         >
           Been there
         </ActionButton>
+        <ActionButton onClick={() => setListSheetOpen(true)}>
+          + List
+        </ActionButton>
       </div>
+
+      {/* Add to list bottom sheet */}
+      <AddToListSheet
+        placeId={place.id}
+        open={listSheetOpen}
+        onClose={() => setListSheetOpen(false)}
+      />
     </div>
   );
 }

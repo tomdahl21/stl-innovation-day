@@ -36,3 +36,26 @@ export type LogbookEntry = {
   visitedAt?: string;
   updatedAt: string;
 };
+
+export type SharedList = {
+  id: string;
+  name: string;
+  description?: string;
+  emoji: string;
+  placeIds: string[];
+  createdAt: string;
+  updatedAt: string;
+  source?: {
+    sharedBy?: string;
+    importedAt: string;
+  };
+};
+
+export type SharedListPayload = {
+  v: 1;
+  n: string;
+  d?: string;
+  e?: string;
+  p: string[];
+  by?: string;
+};
