@@ -23,6 +23,7 @@ export type Place = {
   archetypeData: Record<string, unknown>;
   saveCount: number;
   createdAt: string;
+  tags?: string[];
   photoUrl?: string;
   photoSource?: string;
 };

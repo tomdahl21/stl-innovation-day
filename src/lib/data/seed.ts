@@ -21,6 +21,7 @@ type RawSeed = {
   lng: number;
   pitch: string;
   archetypeData: Record<string, unknown>;
+  tags?: string[];
   photoUrl?: string;
   photoSource?: string;
 };
@@ -61,6 +62,7 @@ function buildPlaces(): Place[] {
       archetypeData,
       saveCount: 1 + ((idx * 7) % 22),
       createdAt: "2026-03-01T00:00:00Z",
+      tags: r.tags,
       photoUrl: r.photoUrl,
       photoSource: r.photoSource,
     });
