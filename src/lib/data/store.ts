@@ -28,6 +28,8 @@ const emptyDraft: AddDraft = {
   archetypeData: {},
 };
 
+export type GeoStatus = "idle" | "pending" | "active" | "denied";
+
 type StoreState = {
   // ---- session-only ----
   activePersonaId: string;
@@ -38,6 +40,12 @@ type StoreState = {
   selectedPlaceId: string | null;
   overlay: OverlayKind;
   draft: AddDraft;
+  // ---- geolocation ----
+  userLat: number | null;
+  userLng: number | null;
+  geoStatus: GeoStatus;
+  nearbyMode: boolean;
+  nearbyRadius: number; // miles
 
   // ---- persisted ----
   logbook: Record<string, LogbookEntry>;
@@ -70,6 +78,11 @@ type StoreActions = {
   importList: (payload: SharedListPayload) => string;
   mergeIntoList: (listId: string, payload: SharedListPayload) => void;
   setDisplayName: (name: string) => void;
+  // ---- geolocation ----
+  setUserLocation: (lat: number, lng: number) => void;
+  setGeoStatus: (status: GeoStatus) => void;
+  toggleNearbyMode: () => void;
+  setNearbyRadius: (radius: number) => void;
   // ---- contribution flow ----
   resetDraft: () => void;
   setDraftArchetype: (archetype: ArchetypeName) => void;
@@ -90,6 +103,11 @@ export const useAppStore = create<StoreState & StoreActions>()(
       selectedPlaceId: null,
       overlay: null,
       draft: emptyDraft,
+      userLat: null,
+      userLng: null,
+      geoStatus: "idle",
+      nearbyMode: false,
+      nearbyRadius: 1,
       logbook: {},
       userPlaces: [],
       lists: [],
@@ -254,6 +272,12 @@ export const useAppStore = create<StoreState & StoreActions>()(
         })),
 
       setDisplayName: (name) => set({ displayName: name.trim() }),
+
+      // ---- geolocation ----
+      setUserLocation: (lat, lng) => set({ userLat: lat, userLng: lng, geoStatus: "active" }),
+      setGeoStatus: (status) => set({ geoStatus: status }),
+      toggleNearbyMode: () => set((s) => ({ nearbyMode: !s.nearbyMode })),
+      setNearbyRadius: (radius) => set({ nearbyRadius: radius }),
 
       resetDraft: () => set({ draft: emptyDraft }),
 
