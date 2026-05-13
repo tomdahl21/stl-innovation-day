@@ -9,6 +9,11 @@ export function FilterChips({ onFilterPress }: { onFilterPress: () => void }) {
   const attributeFilter = useAppStore((s) => s.attributeFilter);
   const toggleArchetype = useAppStore((s) => s.toggleArchetype);
   const setArchetypeFilter = useAppStore((s) => s.setArchetypeFilter);
+  const nearbyMode = useAppStore((s) => s.nearbyMode);
+  const nearbyRadius = useAppStore((s) => s.nearbyRadius);
+  const geoStatus = useAppStore((s) => s.geoStatus);
+  const toggleNearbyMode = useAppStore((s) => s.toggleNearbyMode);
+  const setNearbyRadius = useAppStore((s) => s.setNearbyRadius);
 
   const isAll = archetypeFilter === null;
   const isActive = (name: ArchetypeName) =>
@@ -34,6 +39,30 @@ export function FilterChips({ onFilterPress }: { onFilterPress: () => void }) {
 
       {/* Divider */}
       <div className="shrink-0 w-px bg-stone-line/60 mx-0.5 self-stretch" />
+
+      {/* Nearby toggle — only visible once location is available */}
+      {geoStatus === "active" && (
+        <Chip active={nearbyMode} onClick={toggleNearbyMode}>
+          📍 Nearby{nearbyMode && ` ${nearbyRadius} mi`}
+        </Chip>
+      )}
+
+      {/* Nearby radius slider — shown when nearby mode is on */}
+      {geoStatus === "active" && nearbyMode && (
+        <div className="shrink-0 flex items-center gap-2 pl-1 pr-2">
+          <input
+            type="range"
+            min={0.5}
+            max={5}
+            step={0.5}
+            value={nearbyRadius}
+            onChange={(e) => setNearbyRadius(Number(e.target.value))}
+            className="w-20 accent-ink h-1"
+            aria-label="Nearby radius in miles"
+          />
+          <span className="text-[10px] text-ink-muted whitespace-nowrap">{nearbyRadius} mi</span>
+        </div>
+      )}
 
       {/* Attribute filter trigger */}
       <button
