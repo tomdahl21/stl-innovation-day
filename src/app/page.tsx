@@ -6,6 +6,10 @@ import { PlaceDetail } from "@/components/overlays/place-detail";
 import { Logbook } from "@/components/overlays/logbook";
 import { AddFlow } from "@/components/overlays/add-flow";
 import { ProfileStub } from "@/components/overlays/profile-stub";
+import { Lists } from "@/components/overlays/lists";
+import { ListDetail } from "@/components/overlays/list-detail";
+import { ListImport } from "@/components/overlays/list-import";
+import { ListFragmentDetector } from "@/components/overlays/list-fragment-detector";
 
 export default function Home() {
   return (
@@ -16,10 +20,14 @@ export default function Home() {
 
       <PlaceDetail />
       <Logbook />
+      <Lists />
+      <ListDetail />
+      <ListImport />
       <AddFlow />
       <ProfileStub />
 
       <TabBar />
+      <ListFragmentDetector />
     </main>
   );
 }
