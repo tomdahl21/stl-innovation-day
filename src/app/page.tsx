@@ -11,6 +11,7 @@ import { ListDetail } from "@/components/overlays/list-detail";
 import { ListImport } from "@/components/overlays/list-import";
 import { ListFragmentDetector } from "@/components/overlays/list-fragment-detector";
 import { OnboardingGate } from "@/components/onboarding/onboarding-gate";
+import { MonthlyModal } from "@/components/monthly/monthly-modal";
 
 export default function Home() {
   return (
@@ -30,6 +31,7 @@ export default function Home() {
 
       <TabBar />
       <ListFragmentDetector />
+      <MonthlyModal />
     </main>
   );
 }

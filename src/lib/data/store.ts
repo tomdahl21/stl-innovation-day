@@ -55,6 +55,9 @@ type StoreState = {
   pendingImport: SharedListPayload | null;
   displayName: string;
   hasSeenOnboarding: boolean;
+  // Campaign id of the last monthly-feature modal the user dismissed.
+  // Compared against the current campaign id to decide whether to show it.
+  lastMonthlyCampaignSeen: string;
 };
 
 type StoreActions = {
@@ -80,6 +83,7 @@ type StoreActions = {
   mergeIntoList: (listId: string, payload: SharedListPayload) => void;
   setDisplayName: (name: string) => void;
   markOnboardingSeen: () => void;
+  setMonthlyCampaignSeen: (id: string) => void;
   // ---- geolocation ----
   setUserLocation: (lat: number, lng: number) => void;
   setGeoStatus: (status: GeoStatus) => void;
@@ -117,6 +121,7 @@ export const useAppStore = create<StoreState & StoreActions>()(
       pendingImport: null,
       displayName: "",
       hasSeenOnboarding: false,
+      lastMonthlyCampaignSeen: "",
 
       setPersona: (id) => set({ activePersonaId: id }),
 
@@ -278,6 +283,8 @@ export const useAppStore = create<StoreState & StoreActions>()(
 
       markOnboardingSeen: () => set({ hasSeenOnboarding: true }),
 
+      setMonthlyCampaignSeen: (id) => set({ lastMonthlyCampaignSeen: id }),
+
       // ---- geolocation ----
       setUserLocation: (lat, lng) => set({ userLat: lat, userLng: lng, geoStatus: "active" }),
       setGeoStatus: (status) => set({ geoStatus: status }),
@@ -345,6 +352,7 @@ export const useAppStore = create<StoreState & StoreActions>()(
         lists: state.lists,
         displayName: state.displayName,
         hasSeenOnboarding: state.hasSeenOnboarding,
+        lastMonthlyCampaignSeen: state.lastMonthlyCampaignSeen,
       }),
     },
   ),

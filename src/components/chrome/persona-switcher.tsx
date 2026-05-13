@@ -9,6 +9,7 @@ import { cn } from "@/lib/cn";
 export function PersonaSwitcher() {
   const activePersonaId = useAppStore((s) => s.activePersonaId);
   const setPersona = useAppStore((s) => s.setPersona);
+  const setMonthlyCampaignSeen = useAppStore((s) => s.setMonthlyCampaignSeen);
   const [open, setOpen] = useState(false);
 
   const active = getPersona(activePersonaId);
@@ -73,13 +74,29 @@ export function PersonaSwitcher() {
             <Link
               href="/onboarding"
               onClick={() => setOpen(false)}
-              className="flex items-center gap-2 px-3 py-2 text-left text-xs hover:bg-paper-warm/50"
+              className="flex items-center gap-2 border-b border-stone-line/60 px-3 py-2 text-left text-xs hover:bg-paper-warm/50"
             >
               <span className="flex h-7 w-7 items-center justify-center rounded-full bg-paper-warm text-[12px] text-ink-soft">
                 →
               </span>
               <span className="font-medium text-ink-soft">View intro</span>
             </Link>
+            <button
+              onClick={() => {
+                // Clear the seen-id so the modal re-renders. Dismissing it
+                // again will re-set the flag.
+                setMonthlyCampaignSeen("");
+                setOpen(false);
+              }}
+              className="flex w-full items-center gap-2 px-3 py-2 text-left text-xs hover:bg-paper-warm/50"
+            >
+              <span className="flex h-7 w-7 items-center justify-center rounded-full bg-paper-warm text-[12px] text-brick">
+                ✶
+              </span>
+              <span className="font-medium text-ink-soft">
+                View this month&rsquo;s feature
+              </span>
+            </button>
           </div>
         </>
       )}
