@@ -1,50 +1,64 @@
 "use client";
 
+import { useState } from "react";
 import { ClusterMark } from "@/components/cluster-mark";
 import { BRAND } from "@/lib/brand";
 import { PersonaSwitcher } from "./persona-switcher";
 import { FilterChips } from "@/components/map/filter-chips";
 import { useAppStore } from "@/lib/data/store";
+import {
+  ActiveAttributeChips,
+  AttributeFilterSheet,
+} from "@/components/map/attribute-filter";
 
 export function TopBar() {
+  const [filterOpen, setFilterOpen] = useState(false);
   const theme = useAppStore((s) => s.theme);
   const toggleTheme = useAppStore((s) => s.toggleTheme);
   const isDark = theme === "dark";
 
   return (
-    <header className="absolute inset-x-0 top-0 z-20 flex flex-col gap-1.5 bg-paper/95 pt-[max(env(safe-area-inset-top),0.5rem)] pb-2 backdrop-blur-md">
-      <div className="flex items-center justify-between px-3">
-        <div className="flex items-center gap-2">
-          <ClusterMark size={28} />
-          <span className="serif-display text-2xl text-ink">
-            {BRAND.name}
-          </span>
+    <>
+      <header className="absolute inset-x-0 top-0 z-20 flex flex-col gap-1.5 bg-paper/95 pt-[max(env(safe-area-inset-top),0.5rem)] pb-2 backdrop-blur-md">
+        <div className="flex items-center justify-between px-3">
+          <div className="flex items-center gap-2">
+            <ClusterMark size={28} />
+            <span className="serif-display text-2xl text-ink">
+              {BRAND.name}
+            </span>
+          </div>
+          <div className="flex items-center gap-2">
+            <button
+              onClick={toggleTheme}
+              aria-label={isDark ? "Switch to light mode" : "Switch to dark mode"}
+              aria-pressed={isDark}
+              className="flex h-8 w-8 items-center justify-center rounded-full text-ink-muted transition-colors hover:bg-paper-warm hover:text-ink"
+            >
+              {isDark ? <SunIcon /> : <MoonIcon />}
+            </button>
+            <PersonaSwitcher />
+          </div>
         </div>
-        <div className="flex items-center gap-2">
-          <button
-            onClick={toggleTheme}
-            aria-label={isDark ? "Switch to light mode" : "Switch to dark mode"}
-            aria-pressed={isDark}
-            className="flex h-8 w-8 items-center justify-center rounded-full text-ink-muted transition-colors hover:bg-paper-warm hover:text-ink"
+        <div className="px-3">
+          <div
+            role="search"
+            className="flex items-center gap-2 rounded-full bg-paper-warm/90 px-3 py-1.5 text-xs text-ink-muted ring-1 ring-stone-line/40"
           >
-            {isDark ? <SunIcon /> : <MoonIcon />}
-          </button>
-          <PersonaSwitcher />
+            <SearchIcon />
+            <span aria-label={`Search ${BRAND.cityShort}`}>
+              Search {BRAND.cityShort}
+            </span>
+          </div>
         </div>
-      </div>
-      <div className="px-3">
-        <div
-          role="search"
-          className="flex items-center gap-2 rounded-full bg-paper-warm/90 px-3 py-1.5 text-xs text-ink-muted ring-1 ring-stone-line/40"
-        >
-          <SearchIcon />
-          <span aria-label={`Search ${BRAND.cityShort}`}>
-            Search {BRAND.cityShort}
-          </span>
-        </div>
-      </div>
-      <FilterChips />
-    </header>
+        <FilterChips onFilterPress={() => setFilterOpen(true)} />
+        <ActiveAttributeChips />
+      </header>
+
+      <AttributeFilterSheet
+        open={filterOpen}
+        onClose={() => setFilterOpen(false)}
+      />
+    </>
   );
 }
 

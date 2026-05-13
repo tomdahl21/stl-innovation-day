@@ -11,6 +11,11 @@ export type Contributor = {
   joinedAt: string;
 };
 
+export type Photo = {
+  url: string;
+  source?: string;
+};
+
 export type Place = {
   id: string;
   name: string;
@@ -23,8 +28,8 @@ export type Place = {
   archetypeData: Record<string, unknown>;
   saveCount: number;
   createdAt: string;
-  photoUrl?: string;
-  photoSource?: string;
+  tags?: string[];
+  photos: Photo[];
 };
 
 export type LogbookState = "been" | "want" | "saved";
@@ -35,4 +40,27 @@ export type LogbookEntry = {
   note?: string;
   visitedAt?: string;
   updatedAt: string;
+};
+
+export type SharedList = {
+  id: string;
+  name: string;
+  description?: string;
+  emoji: string;
+  placeIds: string[];
+  createdAt: string;
+  updatedAt: string;
+  source?: {
+    sharedBy?: string;
+    importedAt: string;
+  };
+};
+
+export type SharedListPayload = {
+  v: 1;
+  n: string;
+  d?: string;
+  e?: string;
+  p: string[];
+  by?: string;
 };

@@ -5,12 +5,15 @@ import "leaflet/dist/leaflet.css";
 import type {
   Map as LeafletMap,
   Marker as LeafletMarker,
+  CircleMarker as LeafletCircleMarker,
   DivIcon,
   LeafletMouseEvent,
 } from "leaflet";
 import { BRAND } from "@/lib/brand";
 import { useAppStore } from "@/lib/data/store";
 import { useAllPlaces } from "@/lib/data/places";
+import { useGeolocation } from "@/lib/hooks/use-geolocation";
+import { distanceMi } from "@/lib/geo";
 
 type LeafletNS = typeof import("leaflet");
 
@@ -40,14 +43,23 @@ export function MapScreen() {
   const leafletRef = useRef<LeafletNS | null>(null);
   const markersRef = useRef<Map<string, LeafletMarker>>(new Map());
   const draftMarkerRef = useRef<LeafletMarker | null>(null);
+  const userMarkerRef = useRef<LeafletCircleMarker | null>(null);
   const [mapReady, setMapReady] = useState(false);
+
+  useGeolocation();
 
   const allPlaces = useAllPlaces();
   const archetypeFilter = useAppStore((s) => s.archetypeFilter);
+  const attributeFilter = useAppStore((s) => s.attributeFilter);
   const overlay = useAppStore((s) => s.overlay);
   const draftArchetype = useAppStore((s) => s.draft.archetype);
   const draftLat = useAppStore((s) => s.draft.lat);
   const draftLng = useAppStore((s) => s.draft.lng);
+  const userLat = useAppStore((s) => s.userLat);
+  const userLng = useAppStore((s) => s.userLng);
+  const geoStatus = useAppStore((s) => s.geoStatus);
+  const nearbyMode = useAppStore((s) => s.nearbyMode);
+  const nearbyRadius = useAppStore((s) => s.nearbyRadius);
 
   const featuredIds = useMemo(() => {
     const sorted = [...allPlaces].sort((a, b) => b.saveCount - a.saveCount);
@@ -163,7 +175,7 @@ export function MapScreen() {
     }
   }, [mapReady, allPlaces, featuredIds]);
 
-  // Toggle visibility based on archetype filter.
+  // Toggle visibility based on archetype + attribute + nearby filters.
   useEffect(() => {
     if (!mapReady) return;
     const map = mapRef.current;
@@ -172,15 +184,24 @@ export function MapScreen() {
     for (const p of allPlaces) {
       const marker = markersRef.current.get(p.id);
       if (!marker) continue;
-      const visible =
+      const matchesArchetype =
         archetypeFilter === null || archetypeFilter.includes(p.archetype);
+      const matchesAttributes =
+        attributeFilter.length === 0 ||
+        attributeFilter.every((t) => p.tags?.includes(t));
+      const matchesNearby =
+        !nearbyMode ||
+        (userLat !== null &&
+          userLng !== null &&
+          distanceMi(userLat, userLng, p.lat, p.lng) <= nearbyRadius);
+      const visible = matchesArchetype && matchesAttributes && matchesNearby;
       if (visible) {
         if (!map.hasLayer(marker)) marker.addTo(map);
       } else {
         if (map.hasLayer(marker)) map.removeLayer(marker);
       }
     }
-  }, [mapReady, archetypeFilter, allPlaces]);
+  }, [mapReady, archetypeFilter, attributeFilter, nearbyMode, nearbyRadius, userLat, userLng, allPlaces]);
 
   // Draft pin marker (during add flow).
   useEffect(() => {
@@ -205,6 +226,38 @@ export function MapScreen() {
     }
   }, [mapReady, draftLat, draftLng]);
 
+  // User location marker (blue pulsing dot).
+  useEffect(() => {
+    if (!mapReady) return;
+    const map = mapRef.current;
+    const L = leafletRef.current;
+    if (!map || !L) return;
+
+    if (userLat !== null && userLng !== null) {
+      if (!userMarkerRef.current) {
+        userMarkerRef.current = L.circleMarker([userLat, userLng], {
+          radius: 8,
+          fillColor: "#4A90D9",
+          fillOpacity: 1,
+          color: "#fff",
+          weight: 3,
+          interactive: false,
+        }).addTo(map);
+      } else {
+        userMarkerRef.current.setLatLng([userLat, userLng]);
+      }
+    } else if (userMarkerRef.current) {
+      map.removeLayer(userMarkerRef.current);
+      userMarkerRef.current = null;
+    }
+  }, [mapReady, userLat, userLng]);
+
+  const handleLocateMe = () => {
+    if (mapRef.current && userLat !== null && userLng !== null) {
+      mapRef.current.flyTo([userLat, userLng], 14, { duration: 0.8 });
+    }
+  };
+
   // Crosshair cursor in drop mode.
   useEffect(() => {
     const container = containerRef.current;
@@ -217,10 +270,27 @@ export function MapScreen() {
   }, [isDropMode]);
 
   return (
-    <div
-      ref={containerRef}
-      className="absolute inset-0 z-0"
-      aria-label={`Map of ${BRAND.city}`}
-    />
+    <>
+      <div
+        ref={containerRef}
+        className="absolute inset-0 z-0"
+        aria-label={`Map of ${BRAND.city}`}
+      />
+      {geoStatus === "active" && userLat !== null && (
+        <button
+          onClick={handleLocateMe}
+          aria-label="Center on my location"
+          className="absolute bottom-24 right-3 z-10 flex h-10 w-10 items-center justify-center rounded-full bg-surface shadow-md ring-1 ring-stone-line/60 transition-colors hover:bg-paper-warm"
+        >
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <circle cx="12" cy="12" r="4" />
+            <line x1="12" y1="2" x2="12" y2="6" />
+            <line x1="12" y1="18" x2="12" y2="22" />
+            <line x1="2" y1="12" x2="6" y2="12" />
+            <line x1="18" y1="12" x2="22" y2="12" />
+          </svg>
+        </button>
+      )}
+    </>
   );
 }

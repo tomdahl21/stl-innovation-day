@@ -3,9 +3,10 @@
 import { useAppStore, type OverlayKind } from "@/lib/data/store";
 import { cn } from "@/lib/cn";
 
-const TABS: { key: Exclude<OverlayKind, "place"> | "map"; label: string; icon: React.ReactNode }[] = [
+const TABS: { key: Exclude<OverlayKind, "place" | "list-detail" | "list-import"> | "map"; label: string; icon: React.ReactNode }[] = [
   { key: "map", label: "Map", icon: <MapIcon /> },
   { key: "logbook", label: "Logbook", icon: <BookIcon /> },
+  { key: "lists", label: "Lists", icon: <ListIcon /> },
   { key: "add", label: "Add", icon: <PlusIcon /> },
   { key: "profile", label: "Profile", icon: <PersonIcon /> },
 ];
@@ -16,7 +17,11 @@ export function TabBar() {
   const selectPlace = useAppStore((s) => s.selectPlace);
 
   const activeKey =
-    overlay === null || overlay === "place" ? "map" : overlay;
+    overlay === null || overlay === "place"
+      ? "map"
+      : overlay === "list-detail" || overlay === "list-import"
+        ? "lists"
+        : overlay;
 
   return (
     <nav
@@ -73,6 +78,13 @@ function PlusIcon() {
     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
       <circle cx="12" cy="12" r="9" />
       <path d="M12 8v8M8 12h8" />
+    </svg>
+  );
+}
+function ListIcon() {
+  return (
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01" />
     </svg>
   );
 }

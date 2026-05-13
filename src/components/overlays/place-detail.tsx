@@ -1,12 +1,14 @@
 "use client";
 
+import { useState } from "react";
 import { useAppStore } from "@/lib/data/store";
 import { usePlaceById } from "@/lib/data/places";
 import { archetypes } from "@/archetypes";
 import { getPersona } from "@/lib/data/personas";
 import { cn } from "@/lib/cn";
-import { heroStyle } from "@/lib/imagery";
+import { heroStyle, photoTileStyle } from "@/lib/imagery";
 import type { LogbookState } from "@/lib/data/types";
+import { AddToListSheet } from "./add-to-list-sheet";
 
 export function PlaceDetail() {
   const overlay = useAppStore((s) => s.overlay);
@@ -15,6 +17,17 @@ export function PlaceDetail() {
   const logbook = useAppStore((s) => s.logbook);
   const setLogbookState = useAppStore((s) => s.setLogbookState);
   const setLogbookNote = useAppStore((s) => s.setLogbookNote);
+
+  const [listSheetOpen, setListSheetOpen] = useState(false);
+
+  // Reset active photo on place change via the React-recommended derived-state
+  // pattern (https://react.dev/learn/you-might-not-need-an-effect#resetting-all-state-when-a-prop-changes).
+  const [activePhoto, setActivePhoto] = useState(0);
+  const [lastPlaceId, setLastPlaceId] = useState(selectedPlaceId);
+  if (selectedPlaceId !== lastPlaceId) {
+    setLastPlaceId(selectedPlaceId);
+    setActivePhoto(0);
+  }
 
   const place = usePlaceById(selectedPlaceId);
   if (overlay !== "place" || !selectedPlaceId || !place) return null;
@@ -37,7 +50,7 @@ export function PlaceDetail() {
       {/* Hero */}
       <div
         className="relative h-44 shrink-0 bg-paper-warm"
-        style={heroStyle(place)}
+        style={heroStyle(place, activePhoto)}
       >
         {/* Close — min 44×44px touch target */}
         <button
@@ -56,7 +69,33 @@ export function PlaceDetail() {
                 : "Saved"}
           </div>
         )}
+        {place.photos[activePhoto]?.source && (
+          <div className="absolute bottom-2 right-3 rounded bg-ink/55 px-2 py-0.5 text-[9px] uppercase tracking-[0.1em] text-paper/90">
+            {place.photos[activePhoto].source}
+          </div>
+        )}
       </div>
+
+      {/* Gallery strip — only renders with 2+ photos */}
+      {place.photos.length > 1 && (
+        <div className="flex shrink-0 gap-1.5 overflow-x-auto border-b border-stone-line bg-surface px-3 py-2">
+          {place.photos.map((photo, i) => (
+            <button
+              key={i}
+              onClick={() => setActivePhoto(i)}
+              aria-label={`Photo ${i + 1} of ${place.photos.length}`}
+              aria-current={i === activePhoto}
+              className={cn(
+                "h-12 w-16 shrink-0 rounded-sm border-2 bg-paper-warm transition-colors",
+                i === activePhoto
+                  ? "border-brick"
+                  : "border-transparent hover:border-ink/25",
+              )}
+              style={photoTileStyle(photo)}
+            />
+          ))}
+        </div>
+      )}
 
       {/* Body */}
       <div className="flex-1 overflow-y-auto px-5 py-4">
@@ -138,7 +177,17 @@ export function PlaceDetail() {
         >
           Been there
         </ActionButton>
+        <ActionButton onClick={() => setListSheetOpen(true)}>
+          + List
+        </ActionButton>
       </div>
+
+      {/* Add to list bottom sheet */}
+      <AddToListSheet
+        placeId={place.id}
+        open={listSheetOpen}
+        onClose={() => setListSheetOpen(false)}
+      />
     </div>
   );
 }

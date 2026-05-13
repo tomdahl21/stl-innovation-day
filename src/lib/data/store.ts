@@ -4,9 +4,9 @@ import { create } from "zustand";
 import { persist, createJSONStorage } from "zustand/middleware";
 import type { ArchetypeName } from "@/archetypes";
 import { defaultPersonaId } from "./personas";
-import type { LogbookEntry, LogbookState, Place } from "./types";
+import type { LogbookEntry, LogbookState, Place, SharedList, SharedListPayload } from "./types";
 
-export type OverlayKind = "place" | "logbook" | "profile" | "add" | null;
+export type OverlayKind = "place" | "logbook" | "profile" | "add" | "lists" | "list-detail" | "list-import" | null;
 
 export type AddDraft = {
   archetype: ArchetypeName | null;
@@ -28,19 +28,33 @@ const emptyDraft: AddDraft = {
   archetypeData: {},
 };
 
+export type GeoStatus = "idle" | "pending" | "active" | "denied";
+
 type StoreState = {
   // ---- session-only ----
   activePersonaId: string;
   // null = "all"; otherwise the set of selected archetypes
   archetypeFilter: ArchetypeName[] | null;
+  // empty = no attribute filter; otherwise AND-match all selected tags
+  attributeFilter: string[];
   selectedPlaceId: string | null;
   overlay: OverlayKind;
   draft: AddDraft;
+  // ---- geolocation ----
+  userLat: number | null;
+  userLng: number | null;
+  geoStatus: GeoStatus;
+  nearbyMode: boolean;
+  nearbyRadius: number; // miles
 
   // ---- persisted ----
   logbook: Record<string, LogbookEntry>;
   userPlaces: Place[];
   theme: "light" | "dark";
+  lists: SharedList[];
+  activeListId: string | null;
+  pendingImport: SharedListPayload | null;
+  displayName: string;
 };
 
 type StoreActions = {
@@ -48,10 +62,29 @@ type StoreActions = {
   setPersona: (id: string) => void;
   toggleArchetype: (name: ArchetypeName) => void;
   setArchetypeFilter: (names: ArchetypeName[] | null) => void;
+  toggleAttributeFilter: (tag: string) => void;
+  clearAttributeFilter: () => void;
   selectPlace: (id: string | null) => void;
   setOverlay: (overlay: OverlayKind) => void;
   setLogbookState: (placeId: string, state: LogbookState | null) => void;
   setLogbookNote: (placeId: string, note: string) => void;
+  // ---- lists ----
+  createList: (name: string, emoji?: string) => string;
+  deleteList: (listId: string) => void;
+  renameList: (listId: string, name: string) => void;
+  addPlaceToList: (listId: string, placeId: string) => void;
+  removePlaceFromList: (listId: string, placeId: string) => void;
+  reorderListPlaces: (listId: string, placeIds: string[]) => void;
+  setActiveList: (listId: string | null) => void;
+  setPendingImport: (payload: SharedListPayload | null) => void;
+  importList: (payload: SharedListPayload) => string;
+  mergeIntoList: (listId: string, payload: SharedListPayload) => void;
+  setDisplayName: (name: string) => void;
+  // ---- geolocation ----
+  setUserLocation: (lat: number, lng: number) => void;
+  setGeoStatus: (status: GeoStatus) => void;
+  toggleNearbyMode: () => void;
+  setNearbyRadius: (radius: number) => void;
   // ---- contribution flow ----
   resetDraft: () => void;
   setDraftArchetype: (archetype: ArchetypeName) => void;
@@ -68,15 +101,25 @@ export const useAppStore = create<StoreState & StoreActions>()(
     (set, get) => ({
       activePersonaId: defaultPersonaId,
       archetypeFilter: null,
+      attributeFilter: [],
       selectedPlaceId: null,
       overlay: null,
       draft: emptyDraft,
+      userLat: null,
+      userLng: null,
+      geoStatus: "idle",
+      nearbyMode: false,
+      nearbyRadius: 1,
       logbook: {},
       userPlaces: [],
       theme: "light",
 
       toggleTheme: () =>
         set((s) => ({ theme: s.theme === "light" ? "dark" : "light" })),
+      lists: [],
+      activeListId: null,
+      pendingImport: null,
+      displayName: "",
 
       setPersona: (id) => set({ activePersonaId: id }),
 
@@ -95,6 +138,17 @@ export const useAppStore = create<StoreState & StoreActions>()(
       },
 
       setArchetypeFilter: (names) => set({ archetypeFilter: names }),
+
+      toggleAttributeFilter: (tag) => {
+        const current = get().attributeFilter;
+        if (current.includes(tag)) {
+          set({ attributeFilter: current.filter((t) => t !== tag) });
+        } else {
+          set({ attributeFilter: [...current, tag] });
+        }
+      },
+
+      clearAttributeFilter: () => set({ attributeFilter: [] }),
 
       selectPlace: (id) => set({ selectedPlaceId: id }),
 
@@ -134,6 +188,102 @@ export const useAppStore = create<StoreState & StoreActions>()(
           },
         });
       },
+
+      // ---- lists ----
+      createList: (name, emoji) => {
+        const id = `list-${Date.now().toString(36)}`;
+        const list: SharedList = {
+          id,
+          name: name.trim(),
+          emoji: emoji ?? "📍",
+          placeIds: [],
+          createdAt: now(),
+          updatedAt: now(),
+        };
+        set((s) => ({ lists: [...s.lists, list] }));
+        return id;
+      },
+
+      deleteList: (listId) =>
+        set((s) => ({ lists: s.lists.filter((l) => l.id !== listId) })),
+
+      renameList: (listId, name) =>
+        set((s) => ({
+          lists: s.lists.map((l) =>
+            l.id === listId ? { ...l, name: name.trim(), updatedAt: now() } : l,
+          ),
+        })),
+
+      addPlaceToList: (listId, placeId) =>
+        set((s) => ({
+          lists: s.lists.map((l) =>
+            l.id === listId && !l.placeIds.includes(placeId)
+              ? { ...l, placeIds: [...l.placeIds, placeId], updatedAt: now() }
+              : l,
+          ),
+        })),
+
+      removePlaceFromList: (listId, placeId) =>
+        set((s) => ({
+          lists: s.lists.map((l) =>
+            l.id === listId
+              ? { ...l, placeIds: l.placeIds.filter((id) => id !== placeId), updatedAt: now() }
+              : l,
+          ),
+        })),
+
+      reorderListPlaces: (listId, placeIds) =>
+        set((s) => ({
+          lists: s.lists.map((l) =>
+            l.id === listId ? { ...l, placeIds, updatedAt: now() } : l,
+          ),
+        })),
+
+      setActiveList: (listId) => set({ activeListId: listId }),
+
+      setPendingImport: (payload) => set({ pendingImport: payload }),
+
+      importList: (payload) => {
+        const id = `list-${Date.now().toString(36)}`;
+        const list: SharedList = {
+          id,
+          name: payload.n,
+          description: payload.d,
+          emoji: payload.e ?? "📍",
+          placeIds: payload.p,
+          createdAt: now(),
+          updatedAt: now(),
+          source: {
+            sharedBy: payload.by,
+            importedAt: now(),
+          },
+        };
+        set((s) => ({ lists: [...s.lists, list], pendingImport: null }));
+        return id;
+      },
+
+      mergeIntoList: (listId, payload) =>
+        set((s) => ({
+          lists: s.lists.map((l) => {
+            if (l.id !== listId) return l;
+            const existing = new Set(l.placeIds);
+            const additions = payload.p.filter((id) => !existing.has(id));
+            return {
+              ...l,
+              placeIds: [...l.placeIds, ...additions],
+              updatedAt: now(),
+            };
+          }),
+          pendingImport: null,
+        })),
+
+      setDisplayName: (name) => set({ displayName: name.trim() }),
+
+      // ---- geolocation ----
+      setUserLocation: (lat, lng) => set({ userLat: lat, userLng: lng, geoStatus: "active" }),
+      setGeoStatus: (status) => set({ geoStatus: status }),
+      toggleNearbyMode: () => set((s) => ({ nearbyMode: !s.nearbyMode })),
+      setNearbyRadius: (radius) => set({ nearbyRadius: radius }),
 
       resetDraft: () => set({ draft: emptyDraft }),
 
@@ -178,6 +328,7 @@ export const useAppStore = create<StoreState & StoreActions>()(
           archetypeData: draft.archetypeData,
           saveCount: 0,
           createdAt: now(),
+          photos: [],
         };
         set((s) => ({
           userPlaces: [...s.userPlaces, place],
@@ -192,6 +343,9 @@ export const useAppStore = create<StoreState & StoreActions>()(
       partialize: (state) => ({
         logbook: state.logbook,
         userPlaces: state.userPlaces,
+        theme: state.theme,
+        lists: state.lists,
+        displayName: state.displayName,
         theme: state.theme,
       }),
     },

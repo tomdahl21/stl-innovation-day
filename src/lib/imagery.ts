@@ -1,8 +1,8 @@
 import type { CSSProperties } from "react";
 import type { ArchetypeName } from "@/archetypes";
-import type { Place } from "./data/types";
+import type { Photo, Place } from "./data/types";
 
-// Distinct fallback palettes when a place has no photoUrl.
+// Distinct fallback palettes when a place has no photos.
 // Each archetype gets its own hue family — no duplicates across the six.
 const ARCHETYPE_GRADIENT_THUMB: Record<ArchetypeName, string> = {
   eatery: "linear-gradient(135deg, #c47956 0%, #8A3920 100%)", // sienna → brick-deep
@@ -23,9 +23,10 @@ const ARCHETYPE_GRADIENT_HERO: Record<ArchetypeName, string> = {
 };
 
 export function thumbStyle(place: Place): CSSProperties {
-  if (place.photoUrl) {
+  const photo = place.photos[0];
+  if (photo) {
     return {
-      backgroundImage: `url("${place.photoUrl}")`,
+      backgroundImage: `url("${photo.url}")`,
       backgroundSize: "cover",
       backgroundPosition: "center",
     };
@@ -33,16 +34,25 @@ export function thumbStyle(place: Place): CSSProperties {
   return { background: ARCHETYPE_GRADIENT_THUMB[place.archetype] };
 }
 
-export function heroStyle(place: Place): CSSProperties {
+export function heroStyle(place: Place, index = 0): CSSProperties {
   const overlay = "linear-gradient(180deg, transparent 50%, rgba(26,22,18,0.55) 100%)";
-  if (place.photoUrl) {
+  const photo = place.photos[index];
+  if (photo) {
     return {
-      backgroundImage: `${overlay}, url("${place.photoUrl}")`,
+      backgroundImage: `${overlay}, url("${photo.url}")`,
       backgroundSize: "cover",
       backgroundPosition: "center",
     };
   }
   return {
     backgroundImage: `${overlay}, ${ARCHETYPE_GRADIENT_HERO[place.archetype]}`,
+  };
+}
+
+export function photoTileStyle(photo: Photo): CSSProperties {
+  return {
+    backgroundImage: `url("${photo.url}")`,
+    backgroundSize: "cover",
+    backgroundPosition: "center",
   };
 }
